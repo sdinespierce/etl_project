@@ -4,12 +4,10 @@ In this project we aim to investigate the relationship between:
 Car Accidents to Wealth
 Car Accidents to Population Density
 Car Accidents to Weather
-within New York
+Car Accidents to Make/Model Vehicle
+within the 5 Counties in New York City
 
-Questions
-1. 
-
-
+Above are the example questions that we would be able to answer after our ETL Project
 
 Data Sources:
 Census Data
