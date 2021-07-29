@@ -1,0 +1,13 @@
+Data Sources
+
+https://www.kaggle.com/sobhanmoosavi/us-accidents
+US_Accidents_raw.csv
+
+
+
+datausa.io API call
+https://datausa.io/api/data?drilldowns=County&measures=Household%20Income
+
+
+Census data quick facts 7 counties
+https://www.census.gov/quickfacts/fact/table/bronxcountybronxboroughnewyork/LFE305219
