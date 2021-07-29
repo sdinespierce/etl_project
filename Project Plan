@@ -1,12 +1,35 @@
 Project Plan
 
 Task List:
-- ER Diagram
 
-- SQL for Database
+- Retrieve Data Sources:
+    Census Data- Terrell
+    US Accidents: A Countrywide Traffic Accident Dataset (2016-2020)- Sam
+    New York Department of Transportation Dataset-
+    Data USA.io for New York- Ashleigh
+    
+- Data Cleaning
+    Census Data- 
+    US Accidents: A Countrywide Traffic Accident Dataset (2016-2020)- Sam
+    New York Department of Transportation Dataset-
+    Data USA.io for New York- Ashleigh
+    
+-Putting cleaned data into ER Diagram   
 
-- Working connection to your finished database
+- ER Diagram- Laura
 
-- Project Report Should be a Github pages document utilizing Bootstrap and custom CSS
+- SQL for Database- Laura
 
-- Project Conversation 
+- Data Dictionary-
+
+- Working connection to your finished database-
+
+- Creating Github theme
+
+- Github pg 1
+- Github pg 2
+- Github pg 3
+
+- Project Report Should be a Github pages document utilizing Bootstrap and custom CSS-
+
+- Project Conversation- All
