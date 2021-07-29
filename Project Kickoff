@@ -5,7 +5,14 @@ Car Accidents to Wealth
 Car Accidents to Population Density
 Car Accidents to Weather
 Car Accidents to Make/Model Vehicle
-within the 5 Counties in New York City
+within the following Counties in New York City area;
+- New York County (Manhattan)
+- Kings County (Brooklyn)
+- Bronx County (The Bronx)
+- Richmond County (Staten Island)
+- Queens County (Queens)
+- Suffolk County (Long Island)
+- Nassau County (Freeport)
 
 Above are the example questions that we would be able to answer after our ETL Project
 
