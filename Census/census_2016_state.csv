@@ -1,53 +1,53 @@
-STATE,POPULATION,DATE,State Code
-Alaska,741894,7/1/2016 population_old estimate,02
-Arizona,6931071,7/1/2016 population_old estimate,04
-Arkansas,2988248,7/1/2016 population_old estimate,05
-California,39250017,7/1/2016 population_old estimate,06
-Colorado,5540545,7/1/2016 population_old estimate,08
-Connecticut,3576452,7/1/2016 population_old estimate,09
-Delaware,952065,7/1/2016 population_old estimate,10
-District of Columbia,681170,7/1/2016 population_old estimate,11
-Florida,20612439,7/1/2016 population_old estimate,12
-Georgia,10310371,7/1/2016 population_old estimate,13
-Hawaii,1428557,7/1/2016 population_old estimate,15
-Idaho,1683140,7/1/2016 population_old estimate,16
-Illinois,12801539,7/1/2016 population_old estimate,17
-Indiana,6633053,7/1/2016 population_old estimate,18
-Iowa,3134693,7/1/2016 population_old estimate,19
-Kansas,2907289,7/1/2016 population_old estimate,20
-Kentucky,4436974,7/1/2016 population_old estimate,21
-Louisiana,4681666,7/1/2016 population_old estimate,22
-Maine,1331479,7/1/2016 population_old estimate,23
-Maryland,6016447,7/1/2016 population_old estimate,24
-Massachusetts,6811779,7/1/2016 population_old estimate,25
-Michigan,9928300,7/1/2016 population_old estimate,26
-Minnesota,5519952,7/1/2016 population_old estimate,27
-Alabama,4863300,7/1/2016 population_old estimate,01
-Mississippi,2988726,7/1/2016 population_old estimate,28
-Missouri,6093000,7/1/2016 population_old estimate,29
-Montana,1042520,7/1/2016 population_old estimate,30
-Nebraska,1907116,7/1/2016 population_old estimate,31
-Nevada,2940058,7/1/2016 population_old estimate,32
-New Hampshire,1334795,7/1/2016 population_old estimate,33
-New Jersey,8944469,7/1/2016 population_old estimate,34
-New Mexico,2081015,7/1/2016 population_old estimate,35
-New York,19745289,7/1/2016 population_old estimate,36
-North Carolina,10146788,7/1/2016 population_old estimate,37
-North Dakota,757952,7/1/2016 population_old estimate,38
-Ohio,11614373,7/1/2016 population_old estimate,39
-Oklahoma,3923561,7/1/2016 population_old estimate,40
-Oregon,4093465,7/1/2016 population_old estimate,41
-Pennsylvania,12784227,7/1/2016 population_old estimate,42
-Rhode Island,1056426,7/1/2016 population_old estimate,44
-South Carolina,4961119,7/1/2016 population_old estimate,45
-South Dakota,865454,7/1/2016 population_old estimate,46
-Tennessee,6651194,7/1/2016 population_old estimate,47
-Texas,27862596,7/1/2016 population_old estimate,48
-Utah,3051217,7/1/2016 population_old estimate,49
-Vermont,624594,7/1/2016 population_old estimate,50
-Virginia,8411808,7/1/2016 population_old estimate,51
-Washington,7288000,7/1/2016 population_old estimate,53
-West Virginia,1831102,7/1/2016 population_old estimate,54
-Wisconsin,5778708,7/1/2016 population_old estimate,55
-Wyoming,585501,7/1/2016 population_old estimate,56
-Puerto Rico,3411307,7/1/2016 population_old estimate,72
+STATE,POPULATION,DATE
+Alaska,741894,2016-07-01
+Arizona,6931071,2016-07-01
+Arkansas,2988248,2016-07-01
+California,39250017,2016-07-01
+Colorado,5540545,2016-07-01
+Connecticut,3576452,2016-07-01
+Delaware,952065,2016-07-01
+District of Columbia,681170,2016-07-01
+Florida,20612439,2016-07-01
+Georgia,10310371,2016-07-01
+Hawaii,1428557,2016-07-01
+Idaho,1683140,2016-07-01
+Illinois,12801539,2016-07-01
+Indiana,6633053,2016-07-01
+Iowa,3134693,2016-07-01
+Kansas,2907289,2016-07-01
+Kentucky,4436974,2016-07-01
+Louisiana,4681666,2016-07-01
+Maine,1331479,2016-07-01
+Maryland,6016447,2016-07-01
+Massachusetts,6811779,2016-07-01
+Michigan,9928300,2016-07-01
+Minnesota,5519952,2016-07-01
+Alabama,4863300,2016-07-01
+Mississippi,2988726,2016-07-01
+Missouri,6093000,2016-07-01
+Montana,1042520,2016-07-01
+Nebraska,1907116,2016-07-01
+Nevada,2940058,2016-07-01
+New Hampshire,1334795,2016-07-01
+New Jersey,8944469,2016-07-01
+New Mexico,2081015,2016-07-01
+New York,19745289,2016-07-01
+North Carolina,10146788,2016-07-01
+North Dakota,757952,2016-07-01
+Ohio,11614373,2016-07-01
+Oklahoma,3923561,2016-07-01
+Oregon,4093465,2016-07-01
+Pennsylvania,12784227,2016-07-01
+Rhode Island,1056426,2016-07-01
+South Carolina,4961119,2016-07-01
+South Dakota,865454,2016-07-01
+Tennessee,6651194,2016-07-01
+Texas,27862596,2016-07-01
+Utah,3051217,2016-07-01
+Vermont,624594,2016-07-01
+Virginia,8411808,2016-07-01
+Washington,7288000,2016-07-01
+West Virginia,1831102,2016-07-01
+Wisconsin,5778708,2016-07-01
+Wyoming,585501,2016-07-01
+Puerto Rico,3411307,2016-07-01
