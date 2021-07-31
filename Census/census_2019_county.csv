@@ -144,11 +144,9 @@
 "Wichita County, Texas",132230,7/1/2019 population estimate,48,485
 "Borden County, Texas",654,7/1/2019 population estimate,48,033
 "Marion County, Texas",9854,7/1/2019 population estimate,48,315
-"Maverick County, Texas",58722,7/1/2019 population estimate,48,323
 "Grayson County, Texas",136212,7/1/2019 population estimate,48,181
 "Live Oak County, Texas",12207,7/1/2019 population estimate,48,297
 "Palo Pinto County, Texas",29189,7/1/2019 population estimate,48,363
-"Karnes County, Texas",15601,7/1/2019 population estimate,48,255
 "DeWitt County, Texas",20160,7/1/2019 population estimate,48,123
 "Callahan County, Texas",13943,7/1/2019 population estimate,48,059
 "Cass County, Texas",30026,7/1/2019 population estimate,48,067
@@ -170,11 +168,9 @@
 "Wheeler County, Texas",5056,7/1/2019 population estimate,48,483
 "Archer County, Texas",8553,7/1/2019 population estimate,48,009
 "Brewster County, Texas",9203,7/1/2019 population estimate,48,043
-"Hidalgo County, Texas",868707,7/1/2019 population estimate,48,215
 "Smith County, Texas",232751,7/1/2019 population estimate,48,423
 "Crockett County, Texas",3464,7/1/2019 population estimate,48,105
 "Haskell County, Texas",5658,7/1/2019 population estimate,48,207
-"Howard County, Texas",36664,7/1/2019 population estimate,48,227
 "Mills County, Texas",4873,7/1/2019 population estimate,48,333
 "Montague County, Texas",19818,7/1/2019 population estimate,48,337
 "Martin County, Minnesota",19683,7/1/2019 population estimate,27,091
@@ -240,13 +236,14 @@
 "Sabine County, Texas",10542,7/1/2019 population estimate,48,403
 "Sherman County, Texas",3022,7/1/2019 population estimate,48,421
 "Swisher County, Texas",7397,7/1/2019 population estimate,48,437
-"Hunt County, Texas",98594,7/1/2019 population estimate,48,231
 "Camp County, Texas",13094,7/1/2019 population estimate,48,063
 "Hansford County, Texas",5399,7/1/2019 population estimate,48,195
 "Guadalupe County, Texas",166847,7/1/2019 population estimate,48,187
 "Clay County, Texas",10471,7/1/2019 population estimate,48,077
 "Hartley County, Texas",5576,7/1/2019 population estimate,48,205
-"Hill County, Texas",36649,7/1/2019 population estimate,48,217
+"Maverick County, Texas",58722,7/1/2019 population estimate,48,323
+"Karnes County, Texas",15601,7/1/2019 population estimate,48,255
+"Hunt County, Texas",98594,7/1/2019 population estimate,48,231
 "Limestone County, Texas",23437,7/1/2019 population estimate,48,293
 "Nacogdoches County, Texas",65204,7/1/2019 population estimate,48,347
 "Parmer County, Texas",9605,7/1/2019 population estimate,48,369
@@ -267,6 +264,9 @@
 "Atascosa County, Texas",51153,7/1/2019 population estimate,48,013
 "Nolan County, Texas",14714,7/1/2019 population estimate,48,353
 "Hudspeth County, Texas",4886,7/1/2019 population estimate,48,229
+"Hill County, Texas",36649,7/1/2019 population estimate,48,217
+"Hidalgo County, Texas",868707,7/1/2019 population estimate,48,215
+"Howard County, Texas",36664,7/1/2019 population estimate,48,227
 "Ward County, Texas",11998,7/1/2019 population estimate,48,475
 "Harrison County, Texas",66553,7/1/2019 population estimate,48,203
 "Menard County, Texas",2138,7/1/2019 population estimate,48,327
@@ -308,14 +308,11 @@
 "Washington County, Florida",25473,7/1/2019 population estimate,12,133
 "Duval County, Florida",957755,7/1/2019 population estimate,12,031
 "Bradford County, Florida",28201,7/1/2019 population estimate,12,007
-"Brevard County, Florida",601942,7/1/2019 population estimate,12,009
-"Clay County, Florida",219252,7/1/2019 population estimate,12,019
 "Lafayette County, Florida",8422,7/1/2019 population estimate,12,067
 "Lake County, Florida",367118,7/1/2019 population estimate,12,069
 "Nassau County, Florida",88625,7/1/2019 population estimate,12,089
 "Pinellas County, Florida",974996,7/1/2019 population estimate,12,103
 "Polk County, Florida",724777,7/1/2019 population estimate,12,105
-"St. Lucie County, Florida",328297,7/1/2019 population estimate,12,111
 "Glades County, Florida",13811,7/1/2019 population estimate,12,043
 "Hendry County, Florida",42022,7/1/2019 population estimate,12,051
 "Indian River County, Florida",159923,7/1/2019 population estimate,12,061
@@ -327,16 +324,19 @@
 "Franklin County, Florida",12125,7/1/2019 population estimate,12,037
 "Gulf County, Florida",13639,7/1/2019 population estimate,12,045
 "Liberty County, Florida",8354,7/1/2019 population estimate,12,077
-"Sumter County, Florida",132420,7/1/2019 population estimate,12,119
 "Walton County, Florida",74071,7/1/2019 population estimate,12,131
 "Holmes County, Florida",19617,7/1/2019 population estimate,12,059
 "Jefferson County, Florida",14246,7/1/2019 population estimate,12,065
 "Marion County, Florida",365579,7/1/2019 population estimate,12,083
-"Collier County, Florida",384902,7/1/2019 population estimate,12,021
 "Okeechobee County, Florida",42168,7/1/2019 population estimate,12,093
 "Pasco County, Florida",553947,7/1/2019 population estimate,12,101
 "Gilchrist County, Florida",18582,7/1/2019 population estimate,12,041
 "Suwannee County, Florida",44417,7/1/2019 population estimate,12,121
+"Brevard County, Florida",601942,7/1/2019 population estimate,12,009
+"Clay County, Florida",219252,7/1/2019 population estimate,12,019
+"Collier County, Florida",384902,7/1/2019 population estimate,12,021
+"St. Lucie County, Florida",328297,7/1/2019 population estimate,12,111
+"Sumter County, Florida",132420,7/1/2019 population estimate,12,119
 "Alachua County, Florida",269043,7/1/2019 population estimate,12,001
 "Calhoun County, Florida",14105,7/1/2019 population estimate,12,013
 "Columbia County, Florida",71686,7/1/2019 population estimate,12,023
@@ -365,18 +365,18 @@
 "Olmsted County, Minnesota",158293,7/1/2019 population estimate,27,109
 "Wadena County, Minnesota",13682,7/1/2019 population estimate,27,159
 "Benton County, Minnesota",40889,7/1/2019 population estimate,27,009
-"Freeborn County, Minnesota",30281,7/1/2019 population estimate,27,047
 "McLeod County, Minnesota",35893,7/1/2019 population estimate,27,085
 "Pope County, Minnesota",11249,7/1/2019 population estimate,27,121
 "Stevens County, Minnesota",9805,7/1/2019 population estimate,27,149
 "Swift County, Minnesota",9266,7/1/2019 population estimate,27,151
-"Cottonwood County, Minnesota",11196,7/1/2019 population estimate,27,033
 "Scott County, Minnesota",149013,7/1/2019 population estimate,27,139
 "Wabasha County, Minnesota",21627,7/1/2019 population estimate,27,157
-"Crow Wing County, Minnesota",65055,7/1/2019 population estimate,27,035
 "Norman County, Minnesota",6375,7/1/2019 population estimate,27,107
 "Nicollet County, Minnesota",34274,7/1/2019 population estimate,27,103
 "Douglas County, Minnesota",38141,7/1/2019 population estimate,27,041
+"Freeborn County, Minnesota",30281,7/1/2019 population estimate,27,047
+"Cottonwood County, Minnesota",11196,7/1/2019 population estimate,27,033
+"Crow Wing County, Minnesota",65055,7/1/2019 population estimate,27,035
 "Kittson County, Minnesota",4298,7/1/2019 population estimate,27,069
 "Le Sueur County, Minnesota",28887,7/1/2019 population estimate,27,079
 "Mahnomen County, Minnesota",5527,7/1/2019 population estimate,27,087
@@ -436,7 +436,6 @@
 "Washington County, Rhode Island",125577,7/1/2019 population estimate,44,009
 "Newberry County, South Carolina",38440,7/1/2019 population estimate,45,071
 "Clarendon County, South Carolina",33745,7/1/2019 population estimate,45,027
-"Sumter County, South Carolina",106721,7/1/2019 population estimate,45,085
 "Barnwell County, South Carolina",20866,7/1/2019 population estimate,45,011
 "Darlington County, South Carolina",66618,7/1/2019 population estimate,45,031
 "York County, South Carolina",280979,7/1/2019 population estimate,45,091
@@ -458,7 +457,6 @@
 "Añasco Municipio, Puerto Rico",26161,7/1/2019 population estimate,72,011
 "Cataño Municipio, Puerto Rico",23121,7/1/2019 population estimate,72,033
 "Guánica Municipio, Puerto Rico",15383,7/1/2019 population estimate,72,055
-"Loíza Municipio, Puerto Rico",24553,7/1/2019 population estimate,72,087
 "Seminole County, Florida",471826,7/1/2019 population estimate,12,117
 "Flagler County, Florida",115081,7/1/2019 population estimate,12,035
 "Hamilton County, Florida",14428,7/1/2019 population estimate,12,047
@@ -471,22 +469,15 @@
 "DeSoto County, Florida",38001,7/1/2019 population estimate,12,027
 "Charlotte County, Florida",188910,7/1/2019 population estimate,12,015
 "Monroe County, Alabama",20733,7/1/2019 population estimate,01,099
-"Lawrence County, Alabama",32924,7/1/2019 population estimate,01,079
-"Lee County, Alabama",164542,7/1/2019 population estimate,01,081
 "Howard County, Arkansas",13202,7/1/2019 population estimate,05,061
 "Garland County, Arkansas",99386,7/1/2019 population estimate,05,051
 "Mississippi County, Arkansas",40651,7/1/2019 population estimate,05,093
 "Pope County, Arkansas",64072,7/1/2019 population estimate,05,115
 "Prairie County, Arkansas",8062,7/1/2019 population estimate,05,117
-"Union County, Arkansas",38682,7/1/2019 population estimate,05,139
-"Woodruff County, Arkansas",6320,7/1/2019 population estimate,05,147
 "Cleburne County, Arkansas",24919,7/1/2019 population estimate,05,023
 "Cleveland County, Arkansas",7956,7/1/2019 population estimate,05,025
 "Jackson County, Arkansas",16719,7/1/2019 population estimate,05,067
 "Hempstead County, Arkansas",21532,7/1/2019 population estimate,05,057
-"Sharp County, Arkansas",17442,7/1/2019 population estimate,05,135
-"Stone County, Arkansas",12506,7/1/2019 population estimate,05,137
-"Washington County, Arkansas",239187,7/1/2019 population estimate,05,143
 "Baxter County, Arkansas",41932,7/1/2019 population estimate,05,005
 "Ashley County, Arkansas",19657,7/1/2019 population estimate,05,003
 "Craighead County, Arkansas",110332,7/1/2019 population estimate,05,031
@@ -506,6 +497,15 @@
 "Miller County, Arkansas",43257,7/1/2019 population estimate,05,091
 "St. Francis County, Arkansas",24994,7/1/2019 population estimate,05,123
 "White County, Arkansas",78753,7/1/2019 population estimate,05,145
+"Sumter County, South Carolina",106721,7/1/2019 population estimate,45,085
+"Loíza Municipio, Puerto Rico",24553,7/1/2019 population estimate,72,087
+"Lawrence County, Alabama",32924,7/1/2019 population estimate,01,079
+"Lee County, Alabama",164542,7/1/2019 population estimate,01,081
+"Union County, Arkansas",38682,7/1/2019 population estimate,05,139
+"Woodruff County, Arkansas",6320,7/1/2019 population estimate,05,147
+"Sharp County, Arkansas",17442,7/1/2019 population estimate,05,135
+"Stone County, Arkansas",12506,7/1/2019 population estimate,05,137
+"Washington County, Arkansas",239187,7/1/2019 population estimate,05,143
 "Merced County, California",277680,7/1/2019 population estimate,06,047
 "Mariposa County, California",17203,7/1/2019 population estimate,06,043
 "Yuba County, California",78668,7/1/2019 population estimate,06,115
@@ -620,10 +620,8 @@
 "Pembina County, North Dakota",6801,7/1/2019 population estimate,38,067
 "Hettinger County, North Dakota",2499,7/1/2019 population estimate,38,041
 "Cass County, North Dakota",181923,7/1/2019 population estimate,38,017
-"Emmons County, North Dakota",3241,7/1/2019 population estimate,38,029
 "Richland County, North Dakota",16177,7/1/2019 population estimate,38,077
 "Adams County, North Dakota",2216,7/1/2019 population estimate,38,001
-"Eddy County, North Dakota",2287,7/1/2019 population estimate,38,027
 "Mercer County, North Dakota",8187,7/1/2019 population estimate,38,057
 "Martin County, Florida",161000,7/1/2019 population estimate,12,085
 "Union County, Florida",15237,7/1/2019 population estimate,12,125
@@ -670,7 +668,6 @@
 "Elmore County, Alabama",81209,7/1/2019 population estimate,01,051
 "Houston County, Alabama",105882,7/1/2019 population estimate,01,069
 "Talladega County, Alabama",79978,7/1/2019 population estimate,01,121
-"Tuscaloosa County, Alabama",209355,7/1/2019 population estimate,01,125
 "Clay County, Alabama",13235,7/1/2019 population estimate,01,027
 "Coffee County, Alabama",52342,7/1/2019 population estimate,01,031
 "Pike County, Alabama",33114,7/1/2019 population estimate,01,109
@@ -682,7 +679,6 @@
 "Lamar County, Alabama",13805,7/1/2019 population estimate,01,075
 "Butler County, Alabama",19448,7/1/2019 population estimate,01,013
 "Perry County, Alabama",8923,7/1/2019 population estimate,01,105
-"Walker County, Alabama",63521,7/1/2019 population estimate,01,127
 "Conecuh County, Alabama",12067,7/1/2019 population estimate,01,035
 "Greene County, Alabama",8111,7/1/2019 population estimate,01,063
 "Bibb County, Alabama",22394,7/1/2019 population estimate,01,007
@@ -706,10 +702,8 @@
 "Orange County, Indiana",19646,7/1/2019 population estimate,18,117
 "St. Joseph County, Indiana",271826,7/1/2019 population estimate,18,141
 "Kosciusko County, Indiana",79456,7/1/2019 population estimate,18,085
-"Marshall County, Indiana",46258,7/1/2019 population estimate,18,099
 "Switzerland County, Indiana",10751,7/1/2019 population estimate,18,155
 "Vanderburgh County, Indiana",181451,7/1/2019 population estimate,18,163
-"Broomfield County, Colorado",70465,7/1/2019 population estimate,08,014
 "Kent County, Delaware",180786,7/1/2019 population estimate,10,001
 "New Haven County, Connecticut",854757,7/1/2019 population estimate,09,009
 "Windham County, Connecticut",116782,7/1/2019 population estimate,09,015
@@ -776,9 +770,7 @@
 "Howard County, Maryland",325690,7/1/2019 population estimate,24,027
 "Ransom County, North Dakota",5218,7/1/2019 population estimate,38,073
 "Sioux County, North Dakota",4230,7/1/2019 population estimate,38,085
-"Golden Valley County, North Dakota",1761,7/1/2019 population estimate,38,033
 "Towner County, North Dakota",2189,7/1/2019 population estimate,38,095
-"Divide County, North Dakota",2264,7/1/2019 population estimate,38,023
 "Sargent County, North Dakota",3898,7/1/2019 population estimate,38,081
 "Meigs County, Ohio",22907,7/1/2019 population estimate,39,105
 "Champaign County, Ohio",38885,7/1/2019 population estimate,39,021
@@ -821,14 +813,11 @@
 "Wyoming County, West Virginia",20394,7/1/2019 population estimate,54,109
 "Dunn County, Wisconsin",45368,7/1/2019 population estimate,55,033
 "Grant County, Wisconsin",51439,7/1/2019 population estimate,55,043
-"Sheboygan County, Wisconsin",115340,7/1/2019 population estimate,55,117
 "Menominee County, Wisconsin",4556,7/1/2019 population estimate,55,078
 "Buffalo County, Wisconsin",13031,7/1/2019 population estimate,55,011
 "La Crosse County, Wisconsin",118016,7/1/2019 population estimate,55,063
 "Marathon County, Wisconsin",135692,7/1/2019 population estimate,55,073
-"Trempealeau County, Wisconsin",29649,7/1/2019 population estimate,55,121
 "Dodge County, Wisconsin",87839,7/1/2019 population estimate,55,027
-"Vilas County, Wisconsin",22195,7/1/2019 population estimate,55,125
 "Manitowoc County, Wisconsin",78981,7/1/2019 population estimate,55,071
 "Burnett County, Wisconsin",15414,7/1/2019 population estimate,55,013
 "Door County, Wisconsin",27668,7/1/2019 population estimate,55,029
@@ -868,21 +857,17 @@
 "Elkhart County, Indiana",206341,7/1/2019 population estimate,18,039
 "Crawford County, Indiana",10577,7/1/2019 population estimate,18,025
 "Greene County, Indiana",31922,7/1/2019 population estimate,18,055
-"Marion County, Indiana",964582,7/1/2019 population estimate,18,097
 "Benton County, Iowa",25645,7/1/2019 population estimate,19,011
 "Butler County, Iowa",14439,7/1/2019 population estimate,19,023
 "Fremont County, Iowa",6960,7/1/2019 population estimate,19,071
 "Pocahontas County, Iowa",6619,7/1/2019 population estimate,19,151
 "Taylor County, Iowa",6121,7/1/2019 population estimate,19,173
 "Van Buren County, Iowa",7044,7/1/2019 population estimate,19,177
-"Worth County, Iowa",7381,7/1/2019 population estimate,19,195
 "Adams County, Iowa",3602,7/1/2019 population estimate,19,003
 "Audubon County, Iowa",5496,7/1/2019 population estimate,19,009
 "Chickasaw County, Iowa",11933,7/1/2019 population estimate,19,037
 "Davis County, Iowa",9000,7/1/2019 population estimate,19,051
 "Dickinson County, Iowa",17258,7/1/2019 population estimate,19,059
-"Johnson County, Iowa",151140,7/1/2019 population estimate,19,103
-"Monroe County, Iowa",7707,7/1/2019 population estimate,19,135
 "Tama County, Iowa",16854,7/1/2019 population estimate,19,171
 "Sioux County, Iowa",34855,7/1/2019 population estimate,19,167
 "Franklin County, Iowa",10070,7/1/2019 population estimate,19,069
@@ -891,6 +876,19 @@
 "Floyd County, Iowa",15642,7/1/2019 population estimate,19,067
 "Hardin County, Iowa",16846,7/1/2019 population estimate,19,083
 "Lucas County, Iowa",8600,7/1/2019 population estimate,19,117
+"Emmons County, North Dakota",3241,7/1/2019 population estimate,38,029
+"Eddy County, North Dakota",2287,7/1/2019 population estimate,38,027
+"Golden Valley County, North Dakota",1761,7/1/2019 population estimate,38,033
+"Divide County, North Dakota",2264,7/1/2019 population estimate,38,023
+"Tuscaloosa County, Alabama",209355,7/1/2019 population estimate,01,125
+"Walker County, Alabama",63521,7/1/2019 population estimate,01,127
+"Marshall County, Indiana",46258,7/1/2019 population estimate,18,099
+"Marion County, Indiana",964582,7/1/2019 population estimate,18,097
+"Broomfield County, Colorado",70465,7/1/2019 population estimate,08,014
+"Sheboygan County, Wisconsin",115340,7/1/2019 population estimate,55,117
+"Worth County, Iowa",7381,7/1/2019 population estimate,19,195
+"Johnson County, Iowa",151140,7/1/2019 population estimate,19,103
+"Monroe County, Iowa",7707,7/1/2019 population estimate,19,135
 "Lyon County, Iowa",11755,7/1/2019 population estimate,19,119
 "Palo Alto County, Iowa",8886,7/1/2019 population estimate,19,147
 "Shelby County, Iowa",11454,7/1/2019 population estimate,19,165
@@ -937,13 +935,10 @@
 "Menominee County, Michigan",22780,7/1/2019 population estimate,26,109
 "St. Joseph County, Michigan",60964,7/1/2019 population estimate,26,149
 "Washtenaw County, Michigan",367601,7/1/2019 population estimate,26,161
-"Cass County, Michigan",51787,7/1/2019 population estimate,26,027
-"Benzie County, Michigan",17766,7/1/2019 population estimate,26,019
 "Wayne County, Michigan",1749343,7/1/2019 population estimate,26,163
 "Jackson County, Michigan",158510,7/1/2019 population estimate,26,075
 "Genesee County, Michigan",405813,7/1/2019 population estimate,26,049
 "Shiawassee County, Michigan",68122,7/1/2019 population estimate,26,155
-"Charlevoix County, Michigan",26143,7/1/2019 population estimate,26,029
 "Gogebic County, Michigan",13975,7/1/2019 population estimate,26,053
 "Meeker County, Minnesota",23222,7/1/2019 population estimate,27,093
 "Pennington County, Minnesota",14119,7/1/2019 population estimate,27,113
@@ -1099,13 +1094,11 @@
 "Phillips County, Colorado",4265,7/1/2019 population estimate,08,095
 "Archuleta County, Colorado",14029,7/1/2019 population estimate,08,007
 "Denver County, Colorado",727211,7/1/2019 population estimate,08,031
-"Kiowa County, Colorado",1406,7/1/2019 population estimate,08,061
 "Huerfano County, Colorado",6897,7/1/2019 population estimate,08,055
 "Baca County, Colorado",3581,7/1/2019 population estimate,08,009
 "Chaffee County, Colorado",20356,7/1/2019 population estimate,08,015
 "Gilpin County, Colorado",6243,7/1/2019 population estimate,08,047
 "Garfield County, Colorado",60061,7/1/2019 population estimate,08,045
-"Jefferson County, Colorado",582881,7/1/2019 population estimate,08,059
 "Mineral County, Colorado",769,7/1/2019 population estimate,08,079
 "Rio Blanco County, Colorado",6324,7/1/2019 population estimate,08,103
 "Sedgwick County, Colorado",2248,7/1/2019 population estimate,08,115
@@ -1114,6 +1107,13 @@
 "Adams County, Colorado",517421,7/1/2019 population estimate,08,001
 "Eagle County, Colorado",55127,7/1/2019 population estimate,08,037
 "Lake County, Colorado",8127,7/1/2019 population estimate,08,065
+"Trempealeau County, Wisconsin",29649,7/1/2019 population estimate,55,121
+"Vilas County, Wisconsin",22195,7/1/2019 population estimate,55,125
+"Cass County, Michigan",51787,7/1/2019 population estimate,26,027
+"Benzie County, Michigan",17766,7/1/2019 population estimate,26,019
+"Charlevoix County, Michigan",26143,7/1/2019 population estimate,26,029
+"Kiowa County, Colorado",1406,7/1/2019 population estimate,08,061
+"Jefferson County, Colorado",582881,7/1/2019 population estimate,08,059
 "Moffat County, Colorado",13283,7/1/2019 population estimate,08,081
 "Pitkin County, Colorado",17767,7/1/2019 population estimate,08,097
 "Cheyenne County, Colorado",1831,7/1/2019 population estimate,08,017
@@ -1289,7 +1289,6 @@
 "Nassau County, New York",1356924,7/1/2019 population estimate,36,059
 "Schuyler County, New York",17807,7/1/2019 population estimate,36,097
 "Chenango County, New York",47207,7/1/2019 population estimate,36,017
-"Jefferson County, New York",109834,7/1/2019 population estimate,36,045
 "Suffolk County, New York",1476601,7/1/2019 population estimate,36,103
 "Wyoming County, New York",39859,7/1/2019 population estimate,36,121
 "Oswego County, New York",117124,7/1/2019 population estimate,36,075
@@ -1339,7 +1338,6 @@
 "Rockcastle County, Kentucky",16695,7/1/2019 population estimate,21,203
 "Scott County, Kentucky",57004,7/1/2019 population estimate,21,209
 "Warren County, Kentucky",132896,7/1/2019 population estimate,21,227
-"Allen County, Kentucky",21315,7/1/2019 population estimate,21,003
 "Bourbon County, Kentucky",19788,7/1/2019 population estimate,21,017
 "Boyd County, Kentucky",46718,7/1/2019 population estimate,21,019
 "Bullitt County, Kentucky",81676,7/1/2019 population estimate,21,029
@@ -1350,7 +1348,6 @@
 "Muhlenberg County, Kentucky",30622,7/1/2019 population estimate,21,177
 "Pulaski County, Kentucky",64979,7/1/2019 population estimate,21,199
 "Wolfe County, Kentucky",7157,7/1/2019 population estimate,21,237
-"Adair County, Kentucky",19202,7/1/2019 population estimate,21,001
 "Bell County, Kentucky",26032,7/1/2019 population estimate,21,013
 "Cumberland County, Kentucky",6614,7/1/2019 population estimate,21,057
 "Porter County, Indiana",170389,7/1/2019 population estimate,18,127
@@ -1597,7 +1594,6 @@
 "McCracken County, Kentucky",65418,7/1/2019 population estimate,21,145
 "Pike County, Kentucky",57876,7/1/2019 population estimate,21,195
 "Whitley County, Kentucky",36264,7/1/2019 population estimate,21,235
-"Anderson County, Kentucky",22747,7/1/2019 population estimate,21,005
 "Floyd County, Kentucky",35589,7/1/2019 population estimate,21,071
 "Franklin County, Kentucky",50991,7/1/2019 population estimate,21,073
 "McCreary County, Kentucky",17231,7/1/2019 population estimate,21,147
@@ -1646,7 +1642,6 @@
 "O'Brien County, Iowa",13753,7/1/2019 population estimate,19,141
 "Thomas County, Kansas",7777,7/1/2019 population estimate,20,193
 "Montgomery County, Kansas",31829,7/1/2019 population estimate,20,125
-"Rawlins County, Kansas",2530,7/1/2019 population estimate,20,153
 "Clark County, Kansas",1994,7/1/2019 population estimate,20,025
 "Geary County, Kansas",31670,7/1/2019 population estimate,20,061
 "Russell County, Kansas",6856,7/1/2019 population estimate,20,167
@@ -1805,7 +1800,6 @@
 "Stanton County, Kansas",2006,7/1/2019 population estimate,20,187
 "Meade County, Kansas",4033,7/1/2019 population estimate,20,119
 "Morris County, Kansas",5620,7/1/2019 population estimate,20,127
-"Pratt County, Kansas",9164,7/1/2019 population estimate,20,151
 "Rooks County, Kansas",4920,7/1/2019 population estimate,20,163
 "Anderson County, Kansas",7858,7/1/2019 population estimate,20,003
 "Ellsworth County, Kansas",6102,7/1/2019 population estimate,20,053
@@ -1820,7 +1814,6 @@
 "Franklin County, Kansas",25544,7/1/2019 population estimate,20,059
 "Hodgeman County, Kansas",1794,7/1/2019 population estimate,20,083
 "Jewell County, Kansas",2879,7/1/2019 population estimate,20,089
-"Rice County, Kansas",9537,7/1/2019 population estimate,20,159
 "McPherson County, Kansas",28542,7/1/2019 population estimate,20,113
 "Osage County, Kansas",15949,7/1/2019 population estimate,20,139
 "Coffey County, Kansas",8179,7/1/2019 population estimate,20,031
@@ -1845,6 +1838,13 @@
 "Logan County, Kansas",2794,7/1/2019 population estimate,20,109
 "Nemaha County, Kansas",10231,7/1/2019 population estimate,20,131
 "Pottawatomie County, Kansas",24383,7/1/2019 population estimate,20,149
+"Jefferson County, New York",109834,7/1/2019 population estimate,36,045
+"Allen County, Kentucky",21315,7/1/2019 population estimate,21,003
+"Adair County, Kentucky",19202,7/1/2019 population estimate,21,001
+"Anderson County, Kentucky",22747,7/1/2019 population estimate,21,005
+"Rawlins County, Kansas",2530,7/1/2019 population estimate,20,153
+"Pratt County, Kansas",9164,7/1/2019 population estimate,20,151
+"Rice County, Kansas",9537,7/1/2019 population estimate,20,159
 "Wyandotte County, Kansas",165429,7/1/2019 population estimate,20,209
 "Cherokee County, Kansas",19939,7/1/2019 population estimate,20,021
 "Butler County, Kansas",66911,7/1/2019 population estimate,20,015
