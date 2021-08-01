@@ -11,3 +11,7 @@ https://datausa.io/api/data?drilldowns=County&measures=Household%20Income
 
 Census data quick facts 7 counties
 https://www.census.gov/quickfacts/fact/table/bronxcountybronxboroughnewyork/LFE305219
+
+jail population
+https://data.ny.gov/Public-Safety/Jail-Population-By-County-Beginning-1997/nymx-kgkn/data
+
