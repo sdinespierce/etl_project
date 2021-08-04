@@ -1,0 +1,90 @@
+body {
+    height: 750px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+
+h1{
+    color:blue;
+}
+
+h2{
+    color:whitesmoke;
+    text-align: left;
+}
+
+h3{
+  color:black;
+  text-align: left;
+}
+
+h4{
+  color:whitesmoke;
+}
+
+footer{
+  background-color:rgb(93, 93, 233);
+  clear: both;
+    border: 1px groove #aaaaaa;
+    background:rgba(205, 214, 219, 0.925);
+    color: White;
+    padding: 0;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+.navbar {
+  max-height: 50px;
+}
+
+.navigation .navbar-brand{
+    margin-left: 30px;
+    padding: inherit;
+    font-weight: bold;
+    background-color:rgba(205, 214, 219, 0.925);
+    color: blue;
+
+}
+
+.navbar{
+    background-color: blue;
+    font-size: 15px;
+    max-height: 57px;
+}
+
+
+
+.active, .panel:hover {
+    border-color:blue;
+    border-style: solid;
+}
+
+@media(max-width: 450px) {
+  .navbar-expand-lg {
+    background-color: #000000;
+  }
+  .navbar {
+    max-height: none;
+    padding: inherit;
+  }
+  .navbar div {
+    margin: inherit;
+    background-color: rgb(27, 151, 27);
+  }
+  .navbar-brand {
+    padding: 10px;
+  }
+  button{
+    margin-right: 30px;
+  }
+
+
+}
