@@ -1,117 +1,17 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/Zeny7K
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+﻿
+ALTER TABLE "County" (CONSTRAINT [PK_County] PRIMARY KEY CLUSTERED ([County_ID] ASC))
 
+ALTER TABLE "County_Population_by_Year" (CONSTRAINT [PK_County_Population_by_Year] PRIMARY KEY CLUSTERED ([County_ID] ASC))
 
-SET XACT_ABORT ON
+ALTER TABLE "NY_accidents" (CONSTRAINT [PK_NY_accidents] PRIMARY KEY CLUSTERED ([Accident_ID] ASC))
 
-BEGIN TRANSACTION QUICKDBD
+ALTER TABLE "Weather" (CONSTRAINT [PK_Weather] PRIMARY KEY CLUSTERED ([Accident_ID] ASC))
 
-CREATE TABLE [County] (
-    [County_ID] INTEGER  NOT NULL ,
-    [county_name] VARCHAR  NOT NULL ,
-    CONSTRAINT [PK_County] PRIMARY KEY CLUSTERED (
-        [County_ID] ASC
-    )
-)
+ALTER TABLE "Infrastructure" (CONSTRAINT [PK_Infrastructure] PRIMARY KEY CLUSTERED ([Accident_ID] ASC))
 
-CREATE TABLE [County_Population_by_Year] (
-    [County_ID] INTEGER  NOT NULL ,
-    [Year] Date  NOT NULL ,
-    [population] INTEGER  NOT NULL ,
-    CONSTRAINT [PK_County_Population_by_Year] PRIMARY KEY CLUSTERED (
-        [County_ID] ASC
-    )
-)
+ALTER TABLE "Household_Income_by_Race" ([PK_Household_Income_by_Race] PRIMARY KEY CLUSTERED ([Year] ASC,[Race_ID] ASC,[County_ID] ASC))
 
-CREATE TABLE [NY_accidents] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Severity] INTEGER  NOT NULL ,
-    [Distance(mi)] FLOAT  NOT NULL ,
-    [Description] STRING  NOT NULL ,
-    CONSTRAINT [PK_NY_accidents] PRIMARY KEY CLUSTERED (
-        [Accident_ID] ASC
-    )
-)
-
-CREATE TABLE [Time] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Start_Time] DATETIME  NOT NULL ,
-    [End_Time] DATETIME  NOT NULL ,
-    [Sunrise_Sunset] STRING  NOT NULL 
-)
-
-CREATE TABLE [Lat_Lng] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Start_Lat] INTEGER  NOT NULL ,
-    [Start_Lng] INTEGER  NOT NULL ,
-    [End_Lat] INTEGER  NOT NULL ,
-    [End_Lng] INTEGER  NOT NULL 
-)
-
-CREATE TABLE [Weather] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Weather_Timestamp] DATETIME  NOT NULL ,
-    [Temperature(F)] FLOAT  NOT NULL ,
-    [Wind_Chill(F)] FLOAT  NOT NULL ,
-    [Humidity(%)] FLOAT  NOT NULL ,
-    [Pressure(in)] FLOAT  NOT NULL ,
-    [Visibility(mi)] FLOAT  NOT NULL ,
-    [Wind_Direction] STRING  NOT NULL ,
-    [Wind_Speed(mph)] FLOAT  NOT NULL ,
-    [Precipitation(in)] FLOAT  NOT NULL ,
-    [Weather_Condition] STRING  NOT NULL ,
-    CONSTRAINT [PK_Weather] PRIMARY KEY CLUSTERED (
-        [Accident_ID] ASC
-    )
-)
-
-CREATE TABLE [Infrastructure] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Bump] BIT  NOT NULL ,
-    [Crossing] BIT  NOT NULL ,
-    [Give_Way] BIT  NOT NULL ,
-    [Junction] BIT  NOT NULL ,
-    [No_Exit] BIT  NOT NULL ,
-    [Railway] BIT  NOT NULL ,
-    [Roundabout] BIT  NOT NULL ,
-    [Station] BIT  NOT NULL ,
-    [Stop] BIT  NOT NULL ,
-    [Traffic_Calming] BIT  NOT NULL ,
-    [Traffic_Signal] BIT  NOT NULL ,
-    [Turning_Loop] BIT  NOT NULL ,
-    CONSTRAINT [PK_Infrastructure] PRIMARY KEY CLUSTERED (
-        [Accident_ID] ASC
-    )
-)
-
-CREATE TABLE [Address] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Number] INTEGER  NOT NULL ,
-    [Street] STRING  NOT NULL ,
-    [City] STRING  NOT NULL ,
-    [County_ID] INTEGER  NOT NULL ,
-    [Zipcode] VARCHAR  NOT NULL 
-)
-
-CREATE TABLE [Household_Income_by_Race] (
-    [Year] DATE  NOT NULL ,
-    [Race_ID] INTEGER  NOT NULL ,
-    [County_ID] INTEGER  NOT NULL ,
-    [Household_Income] INTEGER  NOT NULL ,
-    [Household_Income_MOE] INTEGER  NOT NULL ,
-    CONSTRAINT [PK_Household_Income_by_Race] PRIMARY KEY CLUSTERED (
-        [Year] ASC,[Race_ID] ASC,[County_ID] ASC
-    )
-)
-
-CREATE TABLE [Race] (
-    [Race_ID] INTEGER  NOT NULL ,
-    [Race] VARCHAR  NOT NULL ,
-    CONSTRAINT [PK_Race] PRIMARY KEY CLUSTERED (
-        [Race_ID] ASC
-    )
-)
+ALTER TABLE "Race" (CONSTRAINT [PK_Race] PRIMARY KEY CLUSTERED ([Race_ID] ASC))
 
 ALTER TABLE [County] WITH CHECK ADD CONSTRAINT [FK_County_County_ID] FOREIGN KEY([County_ID])
 REFERENCES [Address] ([County_ID])

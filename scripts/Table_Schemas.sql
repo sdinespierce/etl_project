@@ -9,6 +9,7 @@ DROP TABLE public."Race";
 DROP TABLE public."Time";
 DROP TABLE public."Weather";
 
+------------------------------------------
 
 CREATE TABLE "Address" (
     "Accident_ID" VARCHAR  NOT NULL ,
@@ -94,3 +95,43 @@ CREATE TABLE "Weather" (
     "Precipitation" DECIMAL  ,
     "Weather_Condition" VARCHAR
 );
+
+------------------------------------------
+
+ALTER TABLE "Address" ADD PRIMARY KEY ("Accident_ID");
+
+ALTER TABLE "County" ADD PRIMARY KEY ("County_ID");
+
+ALTER TABLE "County_Population_by_Year" ADD COLUMN id SERIAL PRIMARY KEY;
+
+ALTER TABLE "Household_Income_by_Race" ADD COLUMN id SERIAL PRIMARY KEY;
+
+ALTER TABLE "Infrastructure" ADD PRIMARY KEY ("Accident_ID");
+
+ALTER TABLE "Lat_Lng" ADD PRIMARY KEY ("Accident_ID");
+
+ALTER TABLE "NY_Accidents" ADD PRIMARY KEY ("Accident_ID");
+
+ALTER TABLE "Race" ADD PRIMARY KEY ("Race_ID");
+
+ALTER TABLE "Time" ADD PRIMARY KEY ("Accident_ID");
+
+ALTER TABLE "Weather" ADD PRIMARY KEY ("Accident_ID");
+
+------------------------------------------
+
+ALTER TABLE "Address" ADD FOREIGN KEY ("Accident_ID") REFERENCES "NY_Accidents"("Accident_ID");
+ALTER TABLE "Address" ADD FOREIGN KEY ("County_ID") REFERENCES "County"("County_ID");
+
+ALTER TABLE "County_Population_by_Year" ADD FOREIGN KEY ("County_ID") REFERENCES "County"("County_ID");
+
+ALTER TABLE "Household_Income_by_Race" ADD FOREIGN KEY ("Race_ID") REFERENCES "Race"("Race_ID");
+ALTER TABLE "Household_Income_by_Race" ADD FOREIGN KEY ("County_ID") REFERENCES "County"("County_ID");
+
+ALTER TABLE "Infrastructure" ADD FOREIGN KEY ("Accident_ID") REFERENCES "NY_Accidents"("Accident_ID");
+
+ALTER TABLE "Lat_Lng" ADD FOREIGN KEY ("Accident_ID") REFERENCES "NY_Accidents"("Accident_ID");
+
+ALTER TABLE "Time" ADD FOREIGN KEY ("Accident_ID") REFERENCES "NY_Accidents"("Accident_ID");
+
+ALTER TABLE "Weather" ADD FOREIGN KEY ("Accident_ID") REFERENCES "NY_Accidents"("Accident_ID");
