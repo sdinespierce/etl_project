@@ -22,9 +22,9 @@ h3{
 }
 
 h4{
+  font-size: smaller;
   color:whitesmoke;
 }
-
 
 footer{
   background-color:rgb(93, 93, 233);
@@ -41,69 +41,27 @@ footer{
     width: 100%;
 }
 
-
-.navbar {
-  max-height: 50px;
+.main-button{
+  padding: 15px;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.navigation .navbar-brand{
-    margin-left: 30px;
-    padding: inherit;
-    font-weight: bold;
-    background-color:rgba(205, 214, 219, 0.925);
-    color: blue;
-
+.bar { 
+  margin-top: -8px;
+  padding-top: 5px;
+  padding-bottom: -8px;
 }
 
-.navbar{
-    background-color: blue;
-    font-size: 15px;
-    max-height: 57px;
-}
+@media(max-width: 991px) {
 
 
-
-.active, .panel:hover {
-    border-color:blue;
-    border-style: solid;
-}
-
-@media(max-width: 950px) {
-  .navbar-expand-lg {
-    background-color:rgb(121, 116, 116);
-  }
-  .navbar {
-    max-height: none;
-    padding: inherit;
-  }
-  .navbar div {
-    margin: inherit;
-    background-color: rgb(121, 116, 116);
-  }
-  .navbar-brand {
-    padding: 10px;
-  }
-  button{
-    margin-right: 30px;
+  .sm-format-cent{
+    text-align: center
   }
 
-  .card {
-
-    visibility: hidden;
-
-  }
-
-
-  h3 {
-
-    visibility: hidden;
-
-  }
-
-  footer {
-
-    visibility: hidden;
-
+  .sm-format-right{
+    text-align: right
   }
 
 }
