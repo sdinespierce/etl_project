@@ -1,0 +1,56 @@
+Table Name,Field Name,Type,Description
+County,County_ID,Integer,This is a unique identifier of the county in address record
+County,County_Name,Varchar,name of the county in address record
+County_Population_by_Year,County_ID,Integer,This is a unique identifier of the county in address record
+County_Population_by_Year,Population,Integer,"the number of people in a city or town, region, country or world"
+County_Population_by_Year,Year,Smallint,A period of time equal to 365 days
+Address,Accident_ID,Varchar,This is a unique identifier of the accident record
+Address,Number,Integer,Shows the street number in address record
+Address,Street,Varchar,Shows the street name in address record
+Address,City,Varchar,Shows the city in address record
+Address,Zipcode,Varchar,Shows the zipcode in address record
+Address,County_ID,Integer,This is a unique identifier of the county in address record
+Household_Income_by_Race,Year,Integer,A period of time equal to 365 days
+Household_Income_by_Race,Race_ID,Integer,This is a unique identifier of the race record
+Household_Income_by_Race,County_ID,Integer,This is a unique identifier of the county in address record
+Household_Income_by_Race,Household_Income,Integer,Income of the household in US dollars
+Household_Income_by_Race,Household_Income_MOE,Integer,Income of the household in US dollars margin of error
+Race,Race_ID,Integer,This is a unique identifier of the race record
+Race,Race ,Varchar,any one of the groups that human beings are often divided into based on physical traits or ancestry
+NY_accidents,Accident_ID,Varchar,This is a unique identifier of the accident record
+NY_accidents,Severity,Integer,"Shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic"
+NY_accidents,Distance,Decimal,The length of the road extent affected by the accident
+NY_accidents,Description,Varchar,Shows natural language description of the accident
+Time,Accident_ID,Varchar,This is a unique identifier of the accident record
+Time,Start_Time,Timestamp,Shows start time of the accident in local time zone
+Time,End_Time,Timestamp,Shows end time of the impact upon traffic flow in the local time zone
+Time,Sunrise_Sunset,Varchar,Shows the period of day (i.e. day or night) based on sunrise/sunset
+Lat_Lng,Accident_ID,Varchar,This is a unique identifier of the accident record
+Lat_Lng,Start_Lat,Double Precision,Shows latitude in GPS coordinate of the start point
+Lat_Lng,Start_Lng,Double Precision,Shows longitude in GPS coordinate of the start point
+Lat_Lng,End_Lat,Double Precision,Shows latitude in GPS coordinate of the end point
+Lat_Lng,End_Lng,Double Precision,Shows longitude in GPS coordinate of the end point
+Weather,Accident_ID,Varchar,This is a unique identifier of the accident record
+Weather,Weather_Timestamp,Timestamp,Shows the time-stamp of weather observation record (in local time)
+Weather,Temperature,Decimal,Shows the temperature (in Fahrenheit)
+Weather,Wind_Chill,Decimal,Shows the wind chill (in Fahrenheit)
+Weather,Humidity,Decimal,Shows the humidity (in percentage)
+Weather,Pressure,Decimal,Shows the air pressure (in inches)
+Weather,Visibility,Decimal,Shows visibility (in miles)
+Weather,Wind_Direction,Varchar,Shows wind direction
+Weather,Wind_Speed,Decimal,Shows wind speed (in miles per hour)
+Weather,Precipitation,Decimal,"Shows precipitation amount in inches, if there is any"
+Weather,Weather_Condition,Varchar,"Shows the weather condition (rain, snow, thunderstorm, fog, etc.)"
+Infrastructure,Accident_ID,Varchar,This is a unique identifier of the accident record
+Infrastructure,Bump,Smallint,A POI annotation which indicates presence of speed bump or hump in a nearby location
+Infrastructure,Crossing,Smallint,A POI annotation which indicates presence of crossing in a nearby location
+Infrastructure,Give_Way,Smallint,A POI annotation which indicates presence of give_way in a nearby location
+Infrastructure,Junction,Smallint,A POI annotation which indicates presence of junction in a nearby location
+Infrastructure,No_Exit,Smallint,A POI annotation which indicates presence of no_exit in a nearby location
+Infrastructure,Railway,Smallint,A POI annotation which indicates presence of railway in a nearby location
+Infrastructure,Roundabout,Smallint,A POI annotation which indicates presence of roundabout in a nearby location
+Infrastructure,Station,Smallint,A POI annotation which indicates presence of station in a nearby location
+Infrastructure,Stop,Smallint,A POI annotation which indicates presence of stop in a nearby location
+Infrastructure,Traffic_Calming,Smallint,A POI annotation which indicates presence of traffic_calming in a nearby location
+Infrastructure,Traffic_Signal,Smallint,A POI annotation which indicates presence of traffic_signal in a nearby location
+Infrastructure,Turning_Loop,Smallint,A POI annotation which indicates presence of turning_loop in a nearby location
