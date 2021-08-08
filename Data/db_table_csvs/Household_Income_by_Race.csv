@@ -1,4 +1,4 @@
-Year,Race ID,COUNTY_ID,Household Income by Race,Household Income by Race Moe
+Year,Race_ID,County_ID,Household_Income,Household_Income_MOE
 2019,1,1,76360,5268.0
 2018,1,1,72570,4727.0
 2017,1,1,73561,3412.0

@@ -20,109 +20,87 @@ DROP TABLE public."Weather";
 
 CREATE TABLE "Address" (
     "Accident_ID" VARCHAR  NOT NULL ,
-    "Number" INTEGER  NOT NULL ,
+    "Number" INTEGER,
     "Street" VARCHAR  NOT NULL ,
-    "City" VARCHAR  NOT NULL ,
-	"Zipcode" VARCHAR  NOT NULL ,
+    "City" VARCHAR,
+	"Zipcode" VARCHAR,
     "County_ID" INTEGER  NOT NULL
-)
+);
 
+CREATE TABLE "County" (
+    "County_ID" INTEGER  NOT NULL ,
+    "County_Name" VARCHAR  NOT NULL
+);
 
-CREATE TABLE [County] (
-    [County_ID] INTEGER  NOT NULL ,
-    [county_name] VARCHAR  NOT NULL ,
-    CONSTRAINT [PK_County] PRIMARY KEY CLUSTERED (
-        [County_ID] ASC
-    )
-)
+CREATE TABLE "County_Population_by_Year" (
+    "County_ID" INTEGER  NOT NULL ,
+    "Population" INTEGER  NOT NULL ,
+	"Year" DATE  NOT NULL
+);
 
-CREATE TABLE [County_Population_by_Year] (
-    [County_ID] INTEGER  NOT NULL ,
-    [Year] DATE  NOT NULL ,
-    [population] INTEGER  NOT NULL ,
-    CONSTRAINT [PK_County_Population_by_Year] PRIMARY KEY CLUSTERED (
-        [County_ID] ASC
-    )
-)
+CREATE TABLE "Household_Income_by_Race" (
+    "Year" INTEGER  NOT NULL ,
+    "Race_ID" INTEGER  NOT NULL ,
+    "County_ID" INTEGER  NOT NULL ,
+    "Household_Income" INTEGER  NOT NULL ,
+    "Household_Income_MOE" INTEGER
+);
 
-CREATE TABLE [Household_Income_by_Race] (
-    [Year] DATE  NOT NULL ,
-    [Race_ID] INTEGER  NOT NULL ,
-    [County_ID] INTEGER  NOT NULL ,
-    [Household_Income] INTEGER  NOT NULL ,
-    [Household_Income_MOE] INTEGER  NOT NULL ,
-    CONSTRAINT [PK_Household_Income_by_Race] PRIMARY KEY CLUSTERED (
-        [Year] ASC,[Race_ID] ASC,[County_ID] ASC
-    )
-)
+CREATE TABLE "Infrastructure" (
+    "Accident_ID" VARCHAR  NOT NULL ,
+    "Bump" SMALLINT,
+    "Crossing" SMALLINT,
+    "Give_Way" SMALLINT,
+    "Junction" SMALLINT,
+    "No_Exit" SMALLINT,
+    "Railway" SMALLINT,
+    "Roundabout" SMALLINT,
+    "Station" SMALLINT,
+    "Stop" SMALLINT,
+    "Traffic_Calming" SMALLINT,
+    "Traffic_Signal" SMALLINT,
+    "Turning_Loop" SMALLINT
+);
 
-CREATE TABLE [Infrastructure] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Bump] BIT(1)  NOT NULL ,
-    [Crossing] BIT(1)  NOT NULL ,
-    [Give_Way] BIT(1)  NOT NULL ,
-    [Junction] BIT(1)  NOT NULL ,
-    [No_Exit] BIT(1)  NOT NULL ,
-    [Railway] BIT(1)  NOT NULL ,
-    [Roundabout] BIT(1)  NOT NULL ,
-    [Station] BIT(1)  NOT NULL ,
-    [Stop] BIT(1)  NOT NULL ,
-    [Traffic_Calming] BIT(1)  NOT NULL ,
-    [Traffic_Signal] BIT(1)  NOT NULL ,
-    [Turning_Loop] BIT(1)  NOT NULL ,
-    CONSTRAINT [PK_Infrastructure] PRIMARY KEY CLUSTERED (
-        [Accident_ID] ASC
-    )
-)
+CREATE TABLE "Lat_Lng" (
+    "Accident_ID" VARCHAR  NOT NULL ,
+    "Start_Lat" DOUBLE PRECISION  NOT NULL ,
+    "Start_Lng" DOUBLE PRECISION  NOT NULL ,
+    "End_Lat" DOUBLE PRECISION ,
+    "End_Lng" DOUBLE PRECISION
+);
 
-CREATE TABLE [Lat_Lng] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Start_Lat] INTEGER  NOT NULL ,
-    [Start_Lng] INTEGER  NOT NULL ,
-    [End_Lat] INTEGER  NOT NULL ,
-    [End_Lng] INTEGER  NOT NULL 
-)
+CREATE TABLE "NY_Accidents" (
+    "Accident_ID" VARCHAR  NOT NULL ,
+    "Severity" INTEGER  NOT NULL ,
+    "Distance" DECIMAL  NOT NULL ,
+    "Description" VARCHAR  NOT NULL
+);
 
-CREATE TABLE [NY_accidents] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Severity] INTEGER  NOT NULL ,
-    [Distance] DECIMAL  NOT NULL ,
-    [Description] VARCHAR  NOT NULL ,
-    CONSTRAINT [PK_NY_accidents] PRIMARY KEY CLUSTERED (
-        [Accident_ID] ASC
-    )
-)
+CREATE TABLE "Race" (
+    "Race_ID" INTEGER  NOT NULL ,
+    "Race" VARCHAR  NOT NULL
+);
 
-CREATE TABLE [Race] (
-    [Race_ID] INTEGER  NOT NULL ,
-    [Race] VARCHAR  NOT NULL ,
-    CONSTRAINT [PK_Race] PRIMARY KEY CLUSTERED (
-        [Race_ID] ASC
-    )
-)
+CREATE TABLE "Time" (
+    "Accident_ID" VARCHAR  NOT NULL ,
+    "Start_Time" TIMESTAMP  NOT NULL ,
+    "End_Time" TIMESTAMP  NOT NULL ,
+    "Sunrise_Sunset" VARCHAR(5)
+);
 
-CREATE TABLE [Time] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Start_Time] TIMESTAMP  NOT NULL ,
-    [End_Time] TIMESTAMP  NOT NULL ,
-    [Sunrise_Sunset] VARCHAR(5)  NOT NULL 
-)
-
-CREATE TABLE [Weather] (
-    [Accident_ID] VARCHAR  NOT NULL ,
-    [Weather_Timestamp] TIMESTAMP  NOT NULL ,
-    [Temperature] DECIMAL  NOT NULL ,
-    [Wind_Chill] DECIMAL  NOT NULL ,
-    [Humidity] DECIMAL  NOT NULL ,
-    [Pressure] DECIMAL  NOT NULL ,
-    [Visibility] DECIMAL  NOT NULL ,
-    [Wind_Direction] VARCHAR  NOT NULL ,
-    [Wind_Speed] DECIMAL  NOT NULL ,
-    [Precipitation] DECIMAL  NOT NULL ,
-    [Weather_Condition] VARCHAR  NOT NULL ,
-    CONSTRAINT [PK_Weather] PRIMARY KEY CLUSTERED (
-        [Accident_ID] ASC
-    )
-)
+CREATE TABLE "Weather" (
+    "Accident_ID" VARCHAR  NOT NULL ,
+    "Weather_Timestamp" TIMESTAMP ,
+    "Temperature" DECIMAL ,
+    "Wind_Chill" DECIMAL ,
+    "Humidity" DECIMAL  ,
+    "Pressure" DECIMAL  ,
+    "Visibility" DECIMAL  ,
+    "Wind_Direction" VARCHAR  ,
+    "Wind_Speed" DECIMAL  ,
+    "Precipitation" DECIMAL  ,
+    "Weather_Condition" VARCHAR
+);
 
 COMMIT TRANSACTION QUICKDBD
