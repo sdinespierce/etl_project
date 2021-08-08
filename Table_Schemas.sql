@@ -1,12 +1,3 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/Zeny7K
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
-SET XACT_ABORT ON
-
-BEGIN TRANSACTION QUICKDBD
-
 DROP TABLE public."Address";
 DROP TABLE public."County";
 DROP TABLE public."County_Population_by_Year";
@@ -17,6 +8,7 @@ DROP TABLE public."NY_Accidents";
 DROP TABLE public."Race";
 DROP TABLE public."Time";
 DROP TABLE public."Weather";
+
 
 CREATE TABLE "Address" (
     "Accident_ID" VARCHAR  NOT NULL ,
@@ -35,7 +27,7 @@ CREATE TABLE "County" (
 CREATE TABLE "County_Population_by_Year" (
     "County_ID" INTEGER  NOT NULL ,
     "Population" INTEGER  NOT NULL ,
-	"Year" DATE  NOT NULL
+	"Year" SMALLINT  NOT NULL
 );
 
 CREATE TABLE "Household_Income_by_Race" (
@@ -102,5 +94,3 @@ CREATE TABLE "Weather" (
     "Precipitation" DECIMAL  ,
     "Weather_Condition" VARCHAR
 );
-
-COMMIT TRANSACTION QUICKDBD
