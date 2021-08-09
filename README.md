@@ -11,14 +11,14 @@ The data was gathered from:
 * Data USA for [Income and Demographics](https://datausa.io/profile/geo/new-york#economy)
 * Kaggle for [Accident Data](US_Accidents_raw.csv)
 
-![image](https://user-images.githubusercontent.com/83014623/128734529-7ada624b-b87c-46f6-b5ae-a2f5d23d2ebf.png)
+![image](Report/pages/images/Sources_page.png?raw=true "Sources")
 
 The above data sets include information such as address, county, weather, infrastructure, time of day, race, etc.
 
 ### Transform
 After our data was gathered, the team worked on creating an Entity Relationship Diagram (see below) to organize the information. This helped narrow down our data and start the process of creating csv tables (via Pandas in Jupyter Notebooks) that included only essential/relevant information to the project. Throughout this process additioanl data cleaning was completed, including splitting and merging datasets, altering data types, and dropping extraneous data.
 
-![image](https://user-images.githubusercontent.com/83014623/128728477-bdcea802-1d34-4aef-82f0-a87c86996b68.png)
+![image](Report/Entity_Relationship_Diagram.png?raw=true "Entity Relationship Diagram")
 
 
 ### Load
@@ -31,4 +31,4 @@ Once the ETL steps were complete, the team utilized HTML to display the database
 
 **[Live site can be found here](https://sdinespierce.github.io/etl_project/)**
 
-![image](Report/pages/images/Landing_page.png?raw=true "Title")
+![image](Report/pages/images/Landing_page.png?raw=true "Landing Page")
