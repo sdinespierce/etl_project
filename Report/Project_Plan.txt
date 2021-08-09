@@ -5,7 +5,7 @@ Task List:
 - Retrieve Data Sources:
     Census Data- Terrell
     US Accidents: A Countrywide Traffic Accident Dataset (2016-2020)- Sam
-    New York Department of Transportation Dataset-
+    New York Department of Transportation Dataset- Ashleigh
     Data USA.io for New York- Sam
     
 - Data Cleaning
@@ -14,7 +14,7 @@ Task List:
     Census Demographics - Mike
     Data USA.io for New York- Sam
     
--Putting cleaned data into ER Diagram   
+- Putting cleaned data into ER Diagram   
 
 - ER Diagram- Laura
 
@@ -24,7 +24,7 @@ Task List:
 
 - Working connection to your finished database-Ashleigh
 
-- Creating Github theme
+- Creating Github theme - 
 
 - Github pg 1
 - Github pg 2
