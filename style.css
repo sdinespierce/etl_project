@@ -1,0 +1,96 @@
+body {
+    height: 750px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+
+h1{
+    color:#212529;
+}
+
+h2{
+    color:#212529;
+    text-align: left;
+}
+
+h3{
+  color:whitesmoke;
+  text-align: center;
+  font-weight: bold;
+}
+
+h4{
+  font-size: smaller;
+  color:whitesmoke;
+}
+h5{
+  text-decoration: none;
+  color:#212529;
+}
+
+
+footer{
+  clear: both;
+    background:#757575;
+    color: White;
+    padding: 0;
+    vertical-align: middle;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+
+}
+
+.main-button{
+  padding: 15px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  right: 0
+}
+.name {
+  font-size: larger;
+  margin-bottom: -2px;
+}
+.contact {
+  font-size: medium;
+  color: #aaaaaa;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.bar { 
+  margin-top: -8px;
+  padding-top: 5px;
+  padding-bottom: -8px;
+}
+.foot {
+  padding: 0px;
+  margin-bottom: -5px;
+}
+.card-text{
+  padding-bottom: 10px;
+}
+#frame{
+  margin-bottom: 175px;
+  margin-top:20px;
+}
+@media(max-width: 991px) {
+  .contact {
+    margin: 0px;
+  }
+
+  .sm-format-cent{
+    text-align: center
+  }
+
+  .sm-format-right{
+    text-align: right
+  }
+
+}

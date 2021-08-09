@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Extract, Transform, and Load</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid bar">
+      <a class="navbar-brand main-button" href="index.html">New York Car Accidents</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-auto">
+            <a href="process.html" class="nav-link" style="color: rgba(205, 214, 219, 0.925)">Project Process</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align:right">Database</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="sources.html">Sources</a></li>
+                <li><a class="dropdown-item" href="ERD.html">Entity Relationship Diagram</a></li>
+                <li><a class="dropdown-item" href="dict.html">Data Dictionary</a></li>
+                <li><a class="dropdown-item" href="schema.html">Table Schemas</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <h1 style="text-align:center; margin-top: 15px;">Project Process</h1>
+    </div>
+    <div class="row">
+      <div class="col-10 offset-1" id="frame">
+        <h2>Extracting</h2><br>
+        <p>
+        The original dataset that we decided to explore was the US accident dataset from Kaggle. That file was 1Gb and contained accident data from 2016-2020 from all around the USA. 
+        That was too large to upload to github so we narrowed our scope down to the state of New York.
+        </p>
+        <p>
+        We wanted to have other information related to counties that could be used to answer specific questions about why accidents are happening in certain places. 
+        This led us to looking at census data for population and wealth statistics for each NY county. We got population data from 2016-2019 from the US Census API, and
+        wealth and race data from datausa.io.
+        </p>
+        <p>
+        Links to sources are found on the Sources page.
+        </p>
+        <p>
+        The files from DataUSA and Kaggle were downloaded directly from the site.  The Census data was called from the API and turned into a JSON for manupilation using:
+        <pre>
+          <code>
+            url_2019_county ="https://api.census.gov/data/2019/pep/population?get=NAME,POP,DATE_DESC&for=county:*&in=state:*&key="+api_key
+            response = requests.get(url_2019_county)
+            response_json = response.json()
+          </code>
+        </pre>
+        This was repeated for 2016-2019.
+        </p>
+        <br><h2>Transforming</h2><br>
+        <p>
+        Cleaning the data had its usual set of challenges that we handled in stride. Splitting and merging datasets, altering data types, and dropping extraneous data.
+        </p>
+        <p>
+        As mentioned above, we trimmed down the accidents data set to NY state only. This took the size of the file from nearly 3 million lines down to about 120 thousand. 
+        <img src="images\Accident_truncate_img.PNG" alt="Database" style="padding-top: 10px;" class="image-responsive rounded mx-auto d-block" width="25%"><br>
+        </p>
+        This accidents file was then divided into CSVs to reflect our target tables.
+        <p>  
+        </p>
+        <p>
+        The census data was initially collected in multiple csv files.  First County IDs were identified and pulled into their own CSV.  THe yearly data was then restricted to County ID, Population, and Year then concattenated into a single file. This was done using:
+        <pre>
+          <code>
+            Combined_New_York_City_Census_df = pd.concat([New_York_City_2016_Census_df, New_York_City_2017_Census_df, New_York_City_2018_Census_df,New_York_City_2019_Census_df], axis=0)
+          </code>
+        </pre>
+        </p>
+        <p>
+        The household income data set had columns calling 1st normal form for a different database. We dropped them using:
+        <pre>
+          <code>
+            df.drop(columns=["ID Race", "ID Year", "ID Geography", "Slug Geography", "Geography"], inplace=True)
+          </code>
+        </pre>
+        This file was then used to create our own Race table, and Income data.  The original data included points of Total Income for all races, which was removed.
+        </p>
+        <p>
+        Once we cleaned the files, created dataframes representative of our SQL schema. This entailed merging multiple datasources and slicing others for easier readability.
+        </p>
+        <br><h2>Loading</h2><br>
+        <p>
+        We used AWS to host a SQL relational database that houses our data. 
+        </p>
+        <p>
+        First the tables were created using a SQL schema mirroring the cleaned CSV files.  Once created the tables were created, a script formed a connection to the database and imported the data. Our database is secured, so any access will require rights.
+        <pre>
+          <code>
+            engine = create_engine(f"postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/bootcamp")
+            conn = engine.connect()
+          </code>
+        </pre>
+        </p>
+        <p>
+        The data was imported using SQLAlchemy:
+        <pre>
+          <code>
+            Time_table_data = pd.read_csv('../Data/db_table_csvs/Time.csv', index_col=0)
+            Time_table_data.to_sql('Time', con = conn, if_exists='append', chunksize = 100000, method ='multi')
+          </code>
+        </pre>
+        </p>
+        <p>
+        Repeated for each table.
+        </p>
+        <p>
+        Additional SQL schema queries were then run to add the table constraints for any columns identified as Keys.
+        </p>
+        <p>
+        Completed Database:
+        </p>
+        <img src="images\Database_img.PNG" alt="Database" style="padding-top: 10px;" class="image-responsive rounded mx-auto d-block" width="75%"><br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <footer id="footer" class="container-fluid">
+    <div class="row">
+      <h3 style="font-size: 25px; margin-bottom: 3px;">Our Team</h3>
+      <div class="card bg-dark text-white card-body foot">
+        <div class='row'>
+          <div class='col-4 col-lg-2 offset-lg-1'>
+            <h4 class="name">Terrell Bradford</h4>
+            <a target="_blank" class="contact" href="https://github.com/terrellbradford">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/terrell-bradford-22062661/">LinkedIn</a>
+          </div>
+          <div class='col-4 col-lg-2 sm-format-cent'>
+            <h4 class="name">Michael Cipriani</h4>
+            <a target="_blank" class="contact" href="https://github.com/mikecip10">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/michael-cipriani/" >LinkedIn</a>
+          </div>
+          <div class='col-4 col-lg-2 sm-format-right'>
+            <h4 class="name">Ashleigh DeVito</h4>
+            <a target="_blank" class="contact" href="https://github.com/ashleighdevito">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/ashleighdevito/">LinkedIn</a>
+          </div>
+          <div class='col-6 col-lg-2'>
+            <h4 class="name">Laura Kemp</h4>
+            <a target="_blank" class="contact" href="https://github.com/lakemp2345">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/laura-kemp-632908158/">LinkedIn</a>
+          </div>
+          <div class='col-6 col-lg-2 sm-format-right'>
+            <h4 class="name">Sam Pierce</h4>
+            <a target="_blank" class="contact" href="https://github.com/sdinespierce">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/sam-pierce/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

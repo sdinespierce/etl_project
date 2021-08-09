@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Extract, Transform, and Load</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid bar">
+      <a class="navbar-brand main-button" href="index.html">New York Car Accidents</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-auto">
+            <a href="process.html" class="nav-link" style="color: rgba(205, 214, 219, 0.925)">Project Process</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align:right">Database</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="sources.html">Sources</a></li>
+                <li><a class="dropdown-item" href="ERD.html">Entity Relationship Diagram</a></li>
+                <li><a class="dropdown-item" href="dict.html">Data Dictionary</a></li>
+                <li><a class="dropdown-item" href="schema.html">Table Schemas</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <h1 style="text-align:center; margin-top: 15px;">Data Dictionary</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-10 offset-1" id="frame">
+        <div class="table-responsive">
+          <table border="1" class="table table-striped">
+            <thead>
+              <tr style="text-align: left;">
+                <th>Table Name</th>
+                <th>Field Name</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>County</td>
+                <td>County_ID</td>
+                <td>Integer</td>
+                <td>This is a unique identifier of the county in address record</td>
+              </tr>
+              <tr>
+                <td>County</td>
+                <td>County_Name</td>
+                <td>Varchar</td>
+                <td>name of the county in address record</td>
+              </tr>
+              <tr>
+                <td>County_Population_by_Year</td>
+                <td>County_ID</td>
+                <td>Integer</td>
+                <td>This is a unique identifier of the county in address record</td>
+              </tr>
+              <tr>
+                <td>County_Population_by_Year</td>
+                <td>Population</td>
+                <td>Integer</td>
+                <td>the number of people in a city or town, region, country or world</td>
+              </tr>
+              <tr>
+                <td>County_Population_by_Year</td>
+                <td>Year</td>
+                <td>Smallint</td>
+                <td>A period of time equal to 365 days</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>Accident_ID</td>
+                <td>Varchar</td>
+                <td>This is a unique identifier of the accident record</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>Number</td>
+                <td>Integer</td>
+                <td>Shows the street number in address record</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>Street</td>
+                <td>Varchar</td>
+                <td>Shows the street name in address record</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>City</td>
+                <td>Varchar</td>
+                <td>Shows the city in address record</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>Zipcode</td>
+                <td>Varchar</td>
+                <td>Shows the zipcode in address record</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>County_ID</td>
+                <td>Integer</td>
+                <td>This is a unique identifier of the county in address record</td>
+              </tr>
+              <tr>
+                <td>Household_Income_by_Race</td>
+                <td>Year</td>
+                <td>Integer</td>
+                <td>A period of time equal to 365 days</td>
+              </tr>
+              <tr>
+                <td>Household_Income_by_Race</td>
+                <td>Race_ID</td>
+                <td>Integer</td>
+                <td>This is a unique identifier of the race record</td>
+              </tr>
+              <tr>
+                <td>Household_Income_by_Race</td>
+                <td>County_ID</td>
+                <td>Integer</td>
+                <td>This is a unique identifier of the county in address record</td>
+              </tr>
+              <tr>
+                <td>Household_Income_by_Race</td>
+                <td>Household_Income</td>
+                <td>Integer</td>
+                <td>Income of the household in US dollars</td>
+              </tr>
+              <tr>
+                <td>Household_Income_by_Race</td>
+                <td>Household_Income_MOE</td>
+                <td>Integer</td>
+                <td>Income of the household in US dollars margin of error</td>
+              </tr>
+              <tr>
+                <td>Race</td>
+                <td>Race_ID</td>
+                <td>Integer</td>
+                <td>This is a unique identifier of the race record</td>
+              </tr>
+              <tr>
+                <td>Race</td>
+                <td>Race</td>
+                <td>Varchar</td>
+                <td>any one of the groups that human beings are often divided into based onÊphysical traits or ancestry</td>
+              </tr>
+              <tr>
+                <td>NY_accidents</td>
+                <td>Accident_ID</td>
+                <td>Varchar</td>
+                <td>This is a unique identifier of the accident record</td>
+              </tr>
+              <tr>
+                <td>NY_accidents</td>
+                <td>Severity</td>
+                <td>Integer</td>
+                <td>Shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic</td>
+              </tr>
+              <tr>
+                <td>NY_accidents</td>
+                <td>Distance</td>
+                <td>Decimal</td>
+                <td>The length of the road extent affected by the accident</td>
+              </tr>
+              <tr>
+                <td>NY_accidents</td>
+                <td>Description</td>
+                <td>Varchar</td>
+                <td>Shows natural language description of the accident</td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>Accident_ID</td>
+                <td>Varchar</td>
+                <td>This is a unique identifier of the accident record</td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>Start_Time</td>
+                <td>Timestamp</td>
+                <td>Shows start time of the accident in local time zone</td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>End_Time</td>
+                <td>Timestamp</td>
+                <td>Shows end time of the impact upon traffic flow in the local time zone</td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>Sunrise_Sunset</td>
+                <td>Varchar</td>
+                <td>Shows the period of day (i.e. day or night) based on sunrise/sunset</td>
+              </tr>
+              <tr>
+                <td>Lat_Lng</td>
+                <td>Accident_ID</td>
+                <td>Varchar</td>
+                <td>This is a unique identifier of the accident record</td>
+              </tr>
+              <tr>
+                <td>Lat_Lng</td>
+                <td>Start_Lat</td>
+                <td>Double Precision</td>
+                <td>Shows latitude in GPS coordinate of the start point</td>
+              </tr>
+              <tr>
+                <td>Lat_Lng</td>
+                <td>Start_Lng</td>
+                <td>Double Precision</td>
+                <td>Shows longitude in GPS coordinate of the start point</td>
+              </tr>
+              <tr>
+                <td>Lat_Lng</td>
+                <td>End_Lat</td>
+                <td>Double Precision</td>
+                <td>Shows latitude in GPS coordinate of the end point</td>
+              </tr>
+              <tr>
+                <td>Lat_Lng</td>
+                <td>End_Lng</td>
+                <td>Double Precision</td>
+                <td>Shows longitude in GPS coordinate of the end point</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Accident_ID</td>
+                <td>Varchar</td>
+                <td>This is a unique identifier of the accident record</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Weather_Timestamp</td>
+                <td>Timestamp</td>
+                <td>Shows the time-stamp of weather observation record (in local time)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Temperature</td>
+                <td>Decimal</td>
+                <td>Shows the temperature (in Fahrenheit)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Wind_Chill</td>
+                <td>Decimal</td>
+                <td>Shows the wind chill (in Fahrenheit)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Humidity</td>
+                <td>Decimal</td>
+                <td>Shows the humidity (in percentage)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Pressure</td>
+                <td>Decimal</td>
+                <td>Shows the air pressure (in inches)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Visibility</td>
+                <td>Decimal</td>
+                <td>Shows visibility (in miles)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Wind_Direction</td>
+                <td>Varchar</td>
+                <td>Shows wind direction</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Wind_Speed</td>
+                <td>Decimal</td>
+                <td>Shows wind speed (in miles per hour)</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Precipitation</td>
+                <td>Decimal</td>
+                <td>Shows precipitation amount in inches, if there is any</td>
+              </tr>
+              <tr>
+                <td>Weather</td>
+                <td>Weather_Condition</td>
+                <td>Varchar</td>
+                <td>Shows the weather condition (rain, snow, thunderstorm, fog, etc.)</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Accident_ID</td>
+                <td>Varchar</td>
+                <td>This is a unique identifier of the accident record</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Bump</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of speed bump or hump in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Crossing</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of crossing in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Give_Way</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of give_way in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Junction</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of junction in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>No_Exit</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of no_exit in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Railway</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of railway in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Roundabout</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of roundabout in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Station</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of station in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Stop</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of stop in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Traffic_Calming</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of traffic_calming in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Traffic_Signal</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of traffic_signal in a nearby location</td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>Turning_Loop</td>
+                <td>Smallint</td>
+                <td>A POI annotation which indicates presence of turning_loop in a nearby location</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="container-fluid">
+    <div class="row">
+      <h3 style="font-size: 25px; margin-bottom: 3px;">Our Team</h3>
+      <div class="card bg-dark text-white card-body foot">
+        <div class='row'>
+          <div class='col-4 col-lg-2 offset-lg-1'>
+            <h4 class="name">Terrell Bradford</h4>
+            <a target="_blank" class="contact" href="https://github.com/terrellbradford">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/terrell-bradford-22062661/">LinkedIn</a>
+          </div>
+          <div class='col-4 col-lg-2 sm-format-cent'>
+            <h4 class="name">Michael Cipriani</h4>
+            <a target="_blank" class="contact" href="https://github.com/mikecip10">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/michael-cipriani/" >LinkedIn</a>
+          </div>
+          <div class='col-4 col-lg-2 sm-format-right'>
+            <h4 class="name">Ashleigh DeVito</h4>
+            <a target="_blank" class="contact" href="https://github.com/ashleighdevito">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/ashleighdevito/">LinkedIn</a>
+          </div>
+          <div class='col-6 col-lg-2'>
+            <h4 class="name">Laura Kemp</h4>
+            <a target="_blank" class="contact" href="https://github.com/lakemp2345">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/laura-kemp-632908158/">LinkedIn</a>
+          </div>
+          <div class='col-6 col-lg-2 sm-format-right'>
+            <h4 class="name">Sam Pierce</h4>
+            <a target="_blank" class="contact" href="https://github.com/sdinespierce">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/sam-pierce/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Extract, Transform, and Load</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid bar">
+      <a class="navbar-brand main-button" href="index.html">New York Car Accidents</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-auto">
+            <a href="process.html" class="nav-link" style="color: rgba(205, 214, 219, 0.925)">Project Process</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align:right">Database</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="sources.html">Sources</a></li>
+                <li><a class="dropdown-item" href="ERD.html">Entity Relationship Diagram</a></li>
+                <li><a class="dropdown-item" href="dict.html">Data Dictionary</a></li>
+                <li><a class="dropdown-item" href="schema.html">Table Schemas</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <h1 style="text-align:center; margin-top: 15px;">Extract, Transform, and Load</h1>
+    </div>
+    <div class="row">
+      <div class="col-10 offset-1" id="frame">
+        <h2>Overview</h2><br>
+        <p>In this project we gathered data to create a database that could be used to examine relationships of factors to car accidents in New York State.  Some possible analysis that may be performed using this data may explore:</p>
+        <ul>
+          <li>Does weather play a role in the time it takes to clear an accident?</li>
+          <li>Do demographics and population compared to wealth across counties in NY?</li>
+          <li>Is the time of day related to number of accidents around certain infrastructure features?</li>
+        </ul>
+        <p>Links to the data sources and process are provided in the upper right corner.</p>
+        <br><h2>Limitations</h2><br>
+        <p>We constrained the data in our database to reflect only accidents involving cars in New York State from 2016 to 2020. Census data is from 2016 to 2019 as the Bureau has yet to release 2020. Population data is from the seven counties intersecting with New York City:</p>
+        <ul>
+          <li>New York County</li>
+          <li>Kings County</li>
+          <li>Queens County</li>
+          <li>Suffolk County</li>
+          <li>Bronx County</li>
+          <li>Richmond County</li>
+          <li>Nassau County</li>
+        </ul>
+        <br><h2>Database</h2><br>
+        <p>We used AWS to host a SQL relational database that houses our data.</p>
+        <img src="images\Database_img.PNG" alt="Database" style="padding-top: 10px;" class="image-responsive rounded mx-auto d-block" width="75%"><br>
+      </div>
+    </div>
+  </div>
+  
+  <footer id="footer" class="container-fluid">
+    <div class="row">
+      <h3 style="font-size: 25px; margin-bottom: 3px;">Our Team</h3>
+      <div class="card bg-dark text-white card-body foot">
+        <div class='row'>
+          <div class='col-4 col-lg-2 offset-lg-1'>
+            <h4 class="name">Terrell Bradford</h4>
+            <a target="_blank" class="contact" href="https://github.com/terrellbradford">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/terrell-bradford-22062661/">LinkedIn</a>
+          </div>
+          <div class='col-4 col-lg-2 sm-format-cent'>
+            <h4 class="name">Michael Cipriani</h4>
+            <a target="_blank" class="contact" href="https://github.com/mikecip10">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/michael-cipriani/" >LinkedIn</a>
+          </div>
+          <div class='col-4 col-lg-2 sm-format-right'>
+            <h4 class="name">Ashleigh DeVito</h4>
+            <a target="_blank" class="contact" href="https://github.com/ashleighdevito">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/ashleighdevito/">LinkedIn</a>
+          </div>
+          <div class='col-6 col-lg-2'>
+            <h4 class="name">Laura Kemp</h4>
+            <a target="_blank" class="contact" href="https://github.com/lakemp2345">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/laura-kemp-632908158/">LinkedIn</a>
+          </div>
+          <div class='col-6 col-lg-2 sm-format-right'>
+            <h4 class="name">Sam Pierce</h4>
+            <a target="_blank" class="contact" href="https://github.com/sdinespierce">Github</a>
+            <a target="_blank" class="contact" href="https://www.linkedin.com/in/sam-pierce/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
