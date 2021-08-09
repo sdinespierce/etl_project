@@ -11,6 +11,8 @@ The data was gathered from:
 * Data USA for [Income](https://datausa.io/profile/geo/new-york#economy)
 * Kaggle for [Accident Data](US_Accidents_raw.csv)
 
+![image](https://user-images.githubusercontent.com/83014623/128734529-7ada624b-b87c-46f6-b5ae-a2f5d23d2ebf.png)
+
 The above data sets include information such as address, county, weather, infrastructure, time of day, race, etc.
 
 ### Transform
@@ -20,6 +22,18 @@ After our data was gathered, the team worked on creating an Entity Relationship 
 
 
 ### Load
-The final step was to transfer the final output data into a database. The data was then cleaned using Jupyter Notebooks and loaded into an Amazon Web Service (AWS) database. The AWS database matched the tables and columns from the final Panda's Dataframe by using SQLAlchemy.
+The final step was to transfer the final output data into a database. The data was then cleaned using Jupyter Notebooks and loaded into an Amazon Web Service (AWS) database. The AWS database matched the tables and columns from the final Panda's Dataframe by using SQLAlchemy. For specfic detail pleasee see the code used below:
 
+![image](https://user-images.githubusercontent.com/83014623/128735511-69fd6314-1a2f-4991-a6d2-435d6796dd61.png)
+![image](https://user-images.githubusercontent.com/83014623/128735638-10fde660-0ac2-4127-af45-58e6fd6527be.png)
 
+### HTML
+Once the ETL steps were complete, the team utilized HTML to properly display the database and our process. For the HTML pages screenshots/links please see below:
+
+#### Landing Page
+[](file:///D:/CODE/etl_project/Report/pages/index.html) 
+![image](https://user-images.githubusercontent.com/83014623/128736457-7e852072-52dd-4016-bd9e-bdd64fe309e5.png)
+
+(insert image and link)
+
+#### 
