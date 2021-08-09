@@ -9,7 +9,7 @@ DROP TABLE public."Race";
 DROP TABLE public."Time";
 DROP TABLE public."Weather";
 
-------------------------------------------
+/*------------------------------------------/*
 
 CREATE TABLE "Address" (
     "Accident_ID" VARCHAR  NOT NULL ,
@@ -96,7 +96,7 @@ CREATE TABLE "Weather" (
     "Weather_Condition" VARCHAR
 );
 
-------------------------------------------
+/*------------------------------------------/*
 
 ALTER TABLE "Address" ADD PRIMARY KEY ("Accident_ID");
 
@@ -118,7 +118,7 @@ ALTER TABLE "Time" ADD PRIMARY KEY ("Accident_ID");
 
 ALTER TABLE "Weather" ADD PRIMARY KEY ("Accident_ID");
 
-------------------------------------------
+/*------------------------------------------/*
 
 ALTER TABLE "Address" ADD FOREIGN KEY ("Accident_ID") REFERENCES "NY_Accidents"("Accident_ID");
 ALTER TABLE "Address" ADD FOREIGN KEY ("County_ID") REFERENCES "County"("County_ID");

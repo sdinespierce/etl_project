@@ -73,7 +73,9 @@ footer{
   padding: 0px;
   margin-bottom: -5px;
 }
-
+.card-text{
+  padding-bottom: 10px;
+}
 #frame{
   margin-bottom: 175px;
   margin-top:20px;
