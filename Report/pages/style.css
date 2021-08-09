@@ -8,11 +8,11 @@ body {
 
 
 h1{
-    color:black;
+    color:#212529;
 }
 
 h2{
-    color:whitesmoke;
+    color:#212529;
     text-align: left;
 }
 
@@ -26,7 +26,10 @@ h4{
   font-size: smaller;
   color:whitesmoke;
 }
-
+h5{
+  text-decoration: none;
+  color:#212529;
+}
 
 
 footer{
@@ -70,7 +73,13 @@ footer{
   padding: 0px;
   margin-bottom: -5px;
 }
-
+.card-text{
+  padding-bottom: 10px;
+}
+#frame{
+  margin-bottom: 175px;
+  margin-top:20px;
+}
 @media(max-width: 991px) {
   .contact {
     margin: 0px;
