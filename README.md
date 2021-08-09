@@ -28,5 +28,7 @@ The final step was to transfer the final output data into a database. The data w
 Once the ETL steps were complete, the team utilized HTML to display the database properties and report on our process. Bootstrap and CSS were used on formatting and the pages are responsive to screen size.
 
 ### Report
+
 **[Live site can be found here](https://sdinespierce.github.io/etl_project/)**
-![image](https://user-images.githubusercontent.com/83014623/128736457-7e852072-52dd-4016-bd9e-bdd64fe309e5.png)
+
+![image](Report\Pages\images\Landing_page.PNG)
