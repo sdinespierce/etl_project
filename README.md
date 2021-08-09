@@ -8,4 +8,4 @@ United States Census Bureau for [Population and Demographics](https://www.census
 Data USA for [Income](https://datausa.io/profile/geo/new-york#economy)
 Kaggle for [Accident Data](US_Accidents_raw.csv)
 
-The ata was then cleaned using Jupyter Notebooks and loaded into an Amazon Web Service database.
+The data was then cleaned using Jupyter Notebooks and loaded into an Amazon Web Service database.
