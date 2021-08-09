@@ -41,36 +41,95 @@
     </div>
     <div class="row">
       <div class="col-10 offset-1" id="frame">
-        <h2>Extracting</h2>
+        <h2>Extracting</h2><br>
         <p>
         The original dataset that we decided to explore was the US accident dataset from Kaggle. That file was 1Gb and contained accident data from 2016-2020 from all around the USA. 
-        That was too large to upload to github so we narrowed our scope down to the state of New York. 
-        
+        That was too large to upload to github so we narrowed our scope down to the state of New York.
+        </p>
+        <p>
         We wanted to have other information related to counties that could be used to answer specific questions about why accidents are happening in certain places. 
         This led us to looking at census data for population and wealth statistics for each NY county. We got population data from 2016-2019 from the US Census API, and
         wealth and race data from datausa.io.
         </p>
-        <h2>Transforming</h2>
+        <p>
+        Links to sources are found on the Sources page.
+        </p>
+        <p>
+        The files from DataUSA and Kaggle were downloaded directly from the site.  The Census data was called from the API and turned into a JSON for manupilation using:
+        <pre>
+          <code>
+            url_2019_county ="https://api.census.gov/data/2019/pep/population?get=NAME,POP,DATE_DESC&for=county:*&in=state:*&key="+api_key
+            response = requests.get(url_2019_county)
+            response_json = response.json()
+          </code>
+        </pre>
+        This was repeated for 2016-2019.
+        </p>
+        <br><h2>Transforming</h2><br>
         <p>
         Cleaning the data had its usual set of challenges that we handled in stride. Splitting and merging datasets, altering data types, and dropping extraneous data.
-        
+        </p>
+        <p>
         As mentioned above, we trimmed down the accidents data set to NY state only. This took the size of the file from nearly 3 million lines down to about 120 thousand. 
-        We also dropped a few columns that didn't have data relevant to our determined scope. 
-        
-        The census data was initially collected in multiple csv files and needed to be concattenated into a single file. 
-        
-        The household income data set had redundant columns and data in 1st normal form. We dropped the useless columns and cleaned the others for easier use. 
-        
+        <img src="images\Accident_truncate_img.PNG" alt="Database" style="padding-top: 10px;" class="image-responsive rounded mx-auto d-block" width="25%"><br>
+        </p>
+        This accidents file was then divided into CSVs to reflect our target tables.
+        <p>  
+        </p>
+        <p>
+        The census data was initially collected in multiple csv files.  First County IDs were identified and pulled into their own CSV.  THe yearly data was then restricted to County ID, Population, and Year then concattenated into a single file. This was done using:
+        <pre>
+          <code>
+            Combined_New_York_City_Census_df = pd.concat([New_York_City_2016_Census_df, New_York_City_2017_Census_df, New_York_City_2018_Census_df,New_York_City_2019_Census_df], axis=0)
+          </code>
+        </pre>
+        </p>
+        <p>
+        The household income data set had columns calling 1st normal form for a different database. We dropped them using:
+        <pre>
+          <code>
+            df.drop(columns=["ID Race", "ID Year", "ID Geography", "Slug Geography", "Geography"], inplace=True)
+          </code>
+        </pre>
+        This file was then used to create our own Race table, and Income data.  The original data included points of Total Income for all races, which was removed.
+        </p>
+        <p>
         Once we cleaned the files, created dataframes representative of our SQL schema. This entailed merging multiple datasources and slicing others for easier readability.
         </p>
-        <h2>Loading</h2>
+        <br><h2>Loading</h2><br>
         <p>
         We used AWS to host a SQL relational database that houses our data. 
         </p>
+        <p>
+        First the tables were created using a SQL schema mirroring the cleaned CSV files.  Once created the tables were created, a script formed a connection to the database and imported the data. Our database is secured, so any access will require rights.
+        <pre>
+          <code>
+            engine = create_engine(f"postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/bootcamp")
+            conn = engine.connect()
+          </code>
+        </pre>
+        </p>
+        <p>
+        The data was imported using SQLAlchemy:
+        <pre>
+          <code>
+            Time_table_data = pd.read_csv('../Data/db_table_csvs/Time.csv', index_col=0)
+            Time_table_data.to_sql('Time', con = conn, if_exists='append', chunksize = 100000, method ='multi')
+          </code>
+        </pre>
+        </p>
+        <p>
+        Repeated for each table.
+        </p>
+        <p>
+        Additional SQL schema queries were then run to add the table constraints for any columns identified as Keys.
+        </p>
+        <p>
+        Completed Database:
+        </p>
+        <img src="images\Database_img.PNG" alt="Database" style="padding-top: 10px;" class="image-responsive rounded mx-auto d-block" width="75%"><br>
       </div>
     </div>
-
-
     </div>
   </div>
   
