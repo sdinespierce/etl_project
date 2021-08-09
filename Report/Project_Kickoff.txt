@@ -1,0 +1,31 @@
+Project Kickoff
+
+In this project we aim to investigate the relationship between: 
+Car Accidents to Wealth
+Car Accidents to Population Density
+Car Accidents to Weather
+Car Accidents to Make/Model Vehicle
+within the following Counties in New York City area;
+- New York County (Manhattan)
+- Kings County (Brooklyn)
+- Bronx County (The Bronx)
+- Richmond County (Staten Island)
+- Queens County (Queens)
+- Suffolk County (Long Island)
+- Nassau County (Freeport)
+
+Above are the example questions that we would be able to answer after our ETL Project
+
+Data Sources:
+Census Data
+US Accidents: A Countrywide Traffic Accident Dataset (2016-2020)
+New York Department of Transportation Dataset
+Data USA.io
+
+
+Team Members:
+Ashleigh
+Sam
+Mike
+Terrell
+Laura
