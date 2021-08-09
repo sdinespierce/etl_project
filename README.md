@@ -30,22 +30,27 @@ The final step was to transfer the final output data into a database. The data w
 ### HTML
 Once the ETL steps were complete, the team utilized HTML to properly display the database and our process. For the HTML pages screenshots/links please see below:
 
-#### Landing Page
+### Landing Page
 [](file:///D:/CODE/etl_project/Report/pages/index.html) 
 ![image](https://user-images.githubusercontent.com/83014623/128736457-7e852072-52dd-4016-bd9e-bdd64fe309e5.png)
 
-#### Sources Page
+
+### Sources Page
 ![image](https://user-images.githubusercontent.com/83014623/128737517-48aeddc7-a453-46b0-a4a2-bfc349a7378a.png)
 
-#### ERD Page
+
+### ERD Page
 ![image](https://user-images.githubusercontent.com/83014623/128737685-7e4b5154-e7a9-48aa-b352-f6faadf10e41.png)
 
-#### Data Dictionary Page
+
+### Data Dictionary Page
 ![image](https://user-images.githubusercontent.com/83014623/128737853-e9e9ec3f-a993-41bd-a6c4-beef07810ae0.png)
 
-#### Table Schemas Page
+
+### Table Schemas Page
 ![image](https://user-images.githubusercontent.com/83014623/128737937-cd0e00f6-79af-4221-8cd2-fce0dbcfd717.png)
 
-#### Project Process Page
+
+### Project Process Page
 
 
