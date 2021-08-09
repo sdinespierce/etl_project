@@ -8,7 +8,7 @@ body {
 
 
 h1{
-    color:black;
+    color:#757575;
 }
 
 h2{
@@ -17,8 +17,9 @@ h2{
 }
 
 h3{
-  color:black;
-  text-align: left;
+  color:whitesmoke;
+  text-align: center;
+  font-weight: bold;
 }
 
 h4{
@@ -26,19 +27,18 @@ h4{
   color:whitesmoke;
 }
 
+
+
 footer{
-  background-color:rgb(93, 93, 233);
   clear: both;
-    border: 1px groove #aaaaaa;
-    background:rgba(205, 214, 219, 0.925);
+    background:#757575;
     color: White;
     padding: 0;
     vertical-align: middle;
-    line-height: normal;
     margin: 0;
     position: fixed;
     bottom: 0px;
-    width: 100%;
+
 }
 
 .main-button{
@@ -47,14 +47,34 @@ footer{
   font-weight: bold;
 }
 
+.dropdown-menu {
+  right: 0
+}
+.name {
+  font-size: larger;
+  margin-bottom: -2px;
+}
+.contact {
+  font-size: medium;
+  color: #aaaaaa;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
 .bar { 
   margin-top: -8px;
   padding-top: 5px;
   padding-bottom: -8px;
 }
+.foot {
+  padding: 0px;
+  margin-bottom: -5px;
+}
 
 @media(max-width: 991px) {
-
+  .contact {
+    margin: 0px;
+  }
 
   .sm-format-cent{
     text-align: center
