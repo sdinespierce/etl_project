@@ -31,4 +31,4 @@ Once the ETL steps were complete, the team utilized HTML to display the database
 
 **[Live site can be found here](https://sdinespierce.github.io/etl_project/)**
 
-![image](..\Report\pages\images\Landing_page.png)
+![image](Report/pages/images/Landing_page.png?raw=true "Title")
