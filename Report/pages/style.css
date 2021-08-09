@@ -74,6 +74,10 @@ footer{
   margin-bottom: -5px;
 }
 
+#frame{
+  margin-bottom: 175px;
+  margin-top:20px;
+}
 @media(max-width: 991px) {
   .contact {
     margin: 0px;
