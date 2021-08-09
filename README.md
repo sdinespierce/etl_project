@@ -18,7 +18,7 @@ The above data sets include information such as address, county, weather, infras
 ### Transform
 After our data was gathered, the team worked on creating an Entity Relationship Diagram (see below) to organize the information. This helped narrow down our data and start the process of creating csv tables (via Pandas in Jupyter Notebooks) that included only essential/relevant information to the project. Throughout this process additioanl data cleaning was completed, including splitting and merging datasets, altering data types, and dropping extraneous data.
 
-![image](Report/Entity_Relationship_Diagram.png?raw=true "Entity Relationship Diagram")
+![image](Report/pages/images/Entity_Relationship_Diagram.png?raw=true "Entity Relationship Diagram")
 
 
 ### Load
