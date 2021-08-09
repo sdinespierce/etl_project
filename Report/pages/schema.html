@@ -36,34 +36,11 @@
   </nav>
 
   <div class="container-fluid">
-    <h1 style="text-align:center">Project Process</h1>
-    <p> 
-      
+    <p>Population info</p>
     <ul>
-      <li>&#9642;<strong> Extracting:</strong><br>
-        The original dataset that we decided to explore was the US accident dataset from Kaggle. That file was 1Gb and contained accident data from 2016-2020 from all around the USA. 
-        That was too large to upload to github so we narrowed our scope down to the state of New York. 
-        
-        We wanted to have other information related to counties that could be used to answer specific questions about why accidents are happening in certain places. 
-        This led us to looking at census data for population and wealth statistics for each NY county. We got population data from 2016-2019 from the US Census API, and
-        wealth and race data from datausa.io. </li><br>
-      <li>&#9642; <strong>Transforming:</strong><br>
-        Cleaning the data had its usual set of challenges that we handled in stride. Splitting and merging datasets, altering data types, and dropping extraneous data.
-        
-        As mentioned above, we trimmed down the accidents data set to NY state only. This took the size of the file from nearly 3 million lines down to about 120 thousand. 
-        We also dropped a few columns that didn't have data relevant to our determined scope. 
-        
-        The census data was initially collected in multiple csv files and needed to be concattenated into a single file. 
-        
-        The household income data set had redundant columns and data in 1st normal form. We dropped the useless columns and cleaned the others for easier use. 
-        
-        Once we cleaned the files, created dataframes representative of our SQL schema. This entailed merging multiple datasources and slicing others for easier readability.
-        </li><br>
-      <li>&#9642; <strong>Loading:</strong><br>
-        We used AWS to host a SQL relational database that houses our data. </li>
-    
+ 
     </ul>
-    </p>
+    <p>Within the state of New York</p>
   </div>
   </div>
   

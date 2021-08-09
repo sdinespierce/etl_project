@@ -1,0 +1,88 @@
+https://app.quickdatabasediagrams.com/#/
+
+Address
+-
+Accident_ID VARCHAR PK FK - NY_Accidents.Accident_ID
+Number INTEGER
+Street VARCHAR
+City VARCHAR
+Zipcode VARCHAR
+County_ID INTEGER FK >- County.County_ID
+
+County
+-
+County_ID INTEGER PK
+County_Name VARCHAR
+
+County_Population_by_Year
+-
+id SERIAL PK
+County_ID INTEGER FK >- County.County_ID
+Population INTEGER
+Year SMALLINT
+
+Household_Income_by_Race
+-
+id SERIAL PK
+Year INTEGER
+Race_ID INTEGER FK >- Race.Race_ID
+County_ID INTEGER FK >- County.County_ID
+Household_Income INTEGER
+Household_Income_MOE INTEGER
+
+Infrastructure
+-
+Accident_ID VARCHAR PK FK - NY_Accidents.Accident_ID
+Bump SMALLINT
+Crossing SMALLINT
+Give_Way SMALLINT
+Junction SMALLINT
+No_Exit SMALLINT
+Railway SMALLINT
+Roundabout SMALLINT
+Station SMALLINT
+Stop SMALLINT
+Traffic_Calming SMALLINT
+Traffic_Signal SMALLINT
+Turning_Loop SMALLINT
+
+Lat_Lng
+-
+Accident_ID VARCHAR PK FK - NY_Accidents.Accident_ID
+Start_Lat DOUBLE 
+Start_Lng DOUBLE 
+End_Lat DOUBLE 
+End_Lng DOUBLE
+
+NY_Accidents
+-
+Accident_ID VARCHAR PK
+Severety INTEGER
+Distance DECIMAL
+Description VARCHAR
+
+Race
+-
+Race_ID INTEGER PK
+Race VARCHAR
+
+Time
+-
+Accident_ID VARCHAR PK FK - NY_Accidents.Accident_ID
+Start_Time TIMESTAMP
+End_Time TIMESTAMP
+Sunrise_Sunset VARCHAR(5)
+
+Weather
+-
+Accident_ID VARCHAR PK FK - NY_Accidents.Accident_ID
+Weather_Timestamp TIMESTAMP
+Temperature DECIMAL
+Wind_Chill DECIMAL
+Humidity DECIMAL
+Pressure DECIMAL
+Visibility DECIMAL
+Wind_Direction VARCHAR
+Wind_Speed DECIMAL
+Precipitation DECIMAL
+Weather_Condition VARCHAR
