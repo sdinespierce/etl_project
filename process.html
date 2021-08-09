@@ -77,7 +77,7 @@
         <p>  
         </p>
         <p>
-        The census data was initially collected in multiple csv files.  First County IDs were identified and pulled into their own CSV.  THe yearly data was then restricted to County ID, Population, and Year then concattenated into a single file. This was done using:
+        The census data was initially collected in multiple csv files.  First, County IDs were identified and pulled into their own CSV.  The yearly data was then restricted to County ID, Population, and Year then concattenated into a single file. This was done using:
         <pre>
           <code>
             Combined_New_York_City_Census_df = pd.concat([New_York_City_2016_Census_df, New_York_City_2017_Census_df, New_York_City_2018_Census_df,New_York_City_2019_Census_df], axis=0)
@@ -85,33 +85,28 @@
         </pre>
         </p>
         <p>
-        The household income data set had columns calling 1st normal form for a different database. We dropped them using:
+        The household income data set had columns referencing IDs from a different database. We dropped them using:
         <pre>
           <code>
             df.drop(columns=["ID Race", "ID Year", "ID Geography", "Slug Geography", "Geography"], inplace=True)
           </code>
         </pre>
-        This file was then used to create our own Race table, and Income data.  The original data included points of Total Income for all races, which was removed.
+        This file was then used to create our own Race and Income tables. The original data included points of Total Income for all races, which was removed.
         </p>
         <p>
-        Once we cleaned the files, created dataframes representative of our SQL schema. This entailed merging multiple datasources and slicing others for easier readability.
+        Once we cleaned the files, we created dataframes representative of our SQL schema. This entailed merging multiple datasources and slicing others for easier readability.
         </p>
         <br><h2>Loading</h2><br>
         <p>
         We used AWS to host a SQL relational database that houses our data. 
         </p>
         <p>
-        First the tables were created using a SQL schema mirroring the cleaned CSV files.  Once created the tables were created, a script formed a connection to the database and imported the data. Our database is secured, so any access will require rights.
+        First, the tables were created using a SQL schema mirroring the cleaned CSV files.  Once the tables were created, we used SQLAlchemy to form a connection to the database and imported the data. Our database is secured, so any access will require rights.
         <pre>
           <code>
             engine = create_engine(f"postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/bootcamp")
             conn = engine.connect()
           </code>
-        </pre>
-        </p>
-        <p>
-        The data was imported using SQLAlchemy:
-        <pre>
           <code>
             Time_table_data = pd.read_csv('../Data/db_table_csvs/Time.csv', index_col=0)
             Time_table_data.to_sql('Time', con = conn, if_exists='append', chunksize = 100000, method ='multi')
@@ -119,7 +114,7 @@
         </pre>
         </p>
         <p>
-        Repeated for each table.
+        We repeated this process for each table until all of our data was uploaded.
         </p>
         <p>
         Additional SQL schema queries were then run to add the table constraints for any columns identified as Keys.
